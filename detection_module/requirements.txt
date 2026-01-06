@@ -1,0 +1,5 @@
+torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu118
+torchreid tensorboard pillow matplotlib gdown easyocr wandb opencv-python ultralytics
+timm moviepy==1.0.3 openmim importlib_metadata
+conda install -c conda-forge gxx_linux-64=11.2.0
+mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.1/index.html

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elderly Wellness Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        * {
+margin: 0;
+padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 60px;
+            background: linear-gradient(180deg, #2d5a2d 0%, #1a3d1a 100%);
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 0;
+            gap: 25px;
+        }
+
+        .sidebar-icon {
+            width: 35px;
+            height: 35px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-icon:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: #00bcd4;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+
+        /* Profile Info Section */
+        .profile-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #232222;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .info {
+    display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .info div {
+            font-size: 14px;
+        }
+
+        .info b {
+            color: #00bcd4;
+        }
+
+        .wellness-highlight {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .wellness-status {
+            color: #4caf50;
+    display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .checkmark {
+            width: 14px;
+            height: 14px;
+            background: #4caf50;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .checkmark::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+color: white;
+            font-size: 10px;
+        }
+
+        /* Visualization Section */
+        .visualization {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            min-height: 250px;
+        }
+
+        .visualization-left {
+            flex: 3;
+            background: #232222;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        .visualization-right {
+            flex: 1;
+            background: #232222;
+            padding: 15px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #00bcd4;
+        }
+
+        .heatmap-container {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+        }
+
+        .radar-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Bottom Section */
+        .bottom-section {
+            display: flex;
+            gap: 15px;
+        }
+
+        .card {
+            flex: 1;
+            background: #232222;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        .card-content {
+            display: flex;
+            gap: 15px;
+        }
+
+        .card-column {
+            flex: 1;
+        }
+
+        .divider-light {
+            width: 2px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+        }
+
+        /* Alert Log Section */
+        .alert-log-container {
+            height: 200px;
+            overflow-y: auto;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .alert-log-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .alert-log-container::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+        }
+
+        .alert-log-container::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 3px;
+        }
+
+        .alert-log-container::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .alert-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .alert-list li {
+            padding: 8px 0;
+            font-size: 13px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #f5f5f5;
+        }
+
+        .alert-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feedback-list, .advice-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .feedback-list li, .advice-list li {
+            padding: 5px 0;
+            font-size: 13px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feedback-list li:last-child, .advice-list li:last-child {
+            border-bottom: none;
+        }
+
+        .status-good {
+            color: #4caf50;
+        }
+
+        .status-moderate {
+            color: #ff9800;
+        }
+
+        .status-needs {
+            color: #f44336;
+        }
+
+        .status-more-needed {
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-icon">G</div>
+        <div class="sidebar-icon">🏠</div>
+        <div class="sidebar-icon">👤</div>
+        <div class="sidebar-icon">📅</div>
+        <div class="sidebar-icon">📊</div>
+        <div class="sidebar-icon">⚙️</div>
+        <div class="sidebar-icon">❓</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">G</div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Support</a>
+                <a href="#">My account</a>
+            </nav>
+        </div>
+
+        <!-- Profile Info -->
+        <div class="profile-info">
+            <div class="info">
+                <div><b>Name:</b> <span id="name">Elderly p.l</span></div>
+                <div><b>Gender:</b> <span id="gender">Male</span></div>
+                <div><b>Age:</b> <span id="age">75</span></div>
+                <div><b>Family Contact:</b> <span id="contact">1234567890</span></div>
+            </div>
+            <div class="wellness-highlight">
+                Overall Wellness: <span class="wellness-status" id="wellness-status">Good <div class="checkmark"></div></span>
+            </div>
+        </div>
+
+        <!-- Visualization Section -->
+        <div class="visualization">
+            <div class="visualization-left">
+                <div class="section-title">Daily Status Visualization</div>
+                <div class="heatmap-container" id="heatmap-container"></div>
+            </div>
+            <div class="visualization-right">
+                <div class="section-title">Wellness Radar</div>
+                <div class="radar-container" id="radar-container"></div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section">
+            <div class="card">
+                <div class="section-title">Alert Log</div>
+                <div class="alert-log-container">
+                    <ul class="alert-list" id="alert-log">
+                        <!-- Will be populated by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-column">
+                        <div class="section-title">Daily Status Feedback</div>
+                        <ul class="feedback-list" id="feedback-list">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                    <div class="divider-light"></div>
+                    <div class="card-column">
+                        <div class="section-title">Advice</div>
+                        <ul class="advice-list" id="advice-list">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global chart instances
+        let heatmapChart = null;
+        let radarChart = null;
+
+        // Load all data from backend files
+        async function loadAllData() {
+            try {
+                const safeFetch = async (url) => {
+                    const res = await fetch(url, { cache: 'no-store' });
+                    if (!res.ok) {
+                        throw new Error(`HTTP ${res.status} for ${url}`);
+                    }
+                    return res.json();
+                };
+
+                // Load personal information
+                const personalInfo = await safeFetch('backend_data/personal_info.json');
+                
+                // Update personal information
+                document.getElementById('name').textContent = personalInfo.name;
+                document.getElementById('gender').textContent = personalInfo.gender;
+                document.getElementById('age').textContent = personalInfo.age;
+                document.getElementById('contact').textContent = personalInfo.family_contact;
+                // Preserve checkmark in wellness when data exists
+                const wellnessEl = document.getElementById('wellness-status');
+                if (personalInfo.overall_wellness && personalInfo.overall_wellness !== 'N/A') {
+                    wellnessEl.innerHTML = `${personalInfo.overall_wellness} <div class="checkmark"></div>`;
+                } else {
+                    wellnessEl.textContent = 'N/A';
+                }
+                
+                // Load wellness radar data
+                const radarData = await safeFetch('backend_data/wellness_radar_data.json');
+                
+                // Create radar chart
+                createRadarChart(radarData);
+                
+                // Load alert log data
+                const alertData = await safeFetch('backend_data/alert_log.json');
+                
+                // Update alert log
+                const alertLog = document.getElementById('alert-log');
+                alertLog.innerHTML = alertData.alerts.map(alert => `<li>${alert.timestamp}</li>`).join('');
+                
+                // Scroll to bottom to show latest alerts
+                const alertContainer = document.querySelector('.alert-log-container');
+                alertContainer.scrollTop = alertContainer.scrollHeight;
+                
+                // Load daily status feedback
+                const feedbackData = await safeFetch('backend_data/daily_status_feedback.json');
+                
+                // Update feedback section
+                updateFeedbackSection(feedbackData);
+                
+                // Load advice data
+                const adviceData = await safeFetch('backend_data/advice.json');
+                
+                // Update advice section
+                updateAdviceSection(adviceData);
+                
+                // Load temporal heatmap data
+                const heatmapData = await safeFetch('backend_data/temporal_heatmap_data.json');
+                
+                // Create heatmap
+                createHeatmap(heatmapData);
+                
+            } catch (error) {
+                console.error('Error loading data:', error);
+                // Fallback to original hardcoded data
+                loadFallbackData();
+            }
+        }
+        
+        // Create radar chart with ECharts
+        function createRadarChart(data) {
+            const radarContainer = document.getElementById('radar-container');
+            
+            if (radarChart) {
+                radarChart.dispose();
+            }
+            
+            radarChart = echarts.init(radarContainer);
+            
+            const option = {
+                backgroundColor: 'transparent',
+                radar: {
+                    indicator: data.categories.map(cat => ({
+                        name: cat,
+                        max: data.max_score
+                    })),
+                    radius: '70%',
+                    center: ['50%', '50%'],
+                    axisName: {
+                        color: '#f5f5f5',
+                        fontSize: 10
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        }
+                    },
+                    splitArea: {
+                        show: false
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        }
+                    }
+                },
+                series: [{
+                    type: 'radar',
+                    data: [{
+                        value: data.categories.map(cat => data.scores[cat]),
+                        name: 'Wellness Level',
+                        itemStyle: {
+                            color: 'rgba(255, 165, 0, 1)'
+                        },
+                        areaStyle: {
+                            color: 'rgba(255, 165, 0, 0.3)'
+                        },
+                        lineStyle: {
+                            color: 'rgba(255, 165, 0, 1)',
+                            width: 2
+                        }
+                    }]
+                }],
+                tooltip: {
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    borderColor: 'rgba(255, 255, 255, 0.2)',
+                    textStyle: {
+                        color: '#f5f5f5'
+                    }
+                }
+            };
+            
+            radarChart.setOption(option);
+        }
+        
+        // Create heatmap with ECharts
+        function createHeatmap(data) {
+            const heatmapContainer = document.getElementById('heatmap-container');
+            
+            if (heatmapChart) {
+                heatmapChart.dispose();
+            }
+            
+            heatmapChart = echarts.init(heatmapContainer);
+            
+            // Derive activity keys (for data access) and labels (for display)
+            const activitiesAll = data.activities || [];
+            const activityKeys = activitiesAll.filter(a => a !== 'Watching TV' && a !== 'Standing');
+            const activityLabels = activityKeys.map(a => a === 'Social' ? 'Social Interact' : a);
+            const timeSlots = Object.keys(data.data).sort();
+            
+            // Prepare data for ECharts heatmap
+            const heatmapData = [];
+            
+            activityKeys.forEach((activity, activityIndex) => {
+                timeSlots.forEach((timeSlot, timeIndex) => {
+                    const v = (data.data[timeSlot] || {})[activity];
+                    const value = typeof v === 'number' ? v : 0;
+                    heatmapData.push([timeIndex, activityIndex, value]);
+                });
+            });
+
+            // Base colors per activity (row)
+            const baseColorsAll = ['#9370DB', '#1E90FF', '#FF7F50', '#3CB371', '#FFD700', '#FF69B4', '#00CED1', '#FFA500'];
+            const baseColors = baseColorsAll.slice(0, activityKeys.length);
+            const hexToRgb = (hex) => {
+                const h = hex.replace('#','');
+                return { r: parseInt(h.substring(0,2),16), g: parseInt(h.substring(2,4),16), b: parseInt(h.substring(4,6),16) };
+            };
+            // Blend base color toward white as value decreases (0 -> near white, 100 -> base)
+            const mixWithWhite = (hex, value01) => {
+                const {r,g,b} = hexToRgb(hex);
+                const t = 1 - value01; // 0 means full base, 1 means white
+                const rr = Math.round(r + (255 - r) * t);
+                const gg = Math.round(g + (255 - g) * t);
+                const bb = Math.round(b + (255 - b) * t);
+                return `rgb(${rr}, ${gg}, ${bb})`;
+            };
+
+            // Format time labels for better readability - show fewer labels to prevent overlap
+            const timeLabels = timeSlots.map(time => {
+                const [hours, minutes] = time.split(':');
+                const hour = parseInt(hours);
+                const ampm = hour >= 12 ? 'pm' : 'am';
+                const displayHour = hour === 0 ? 12 : hour > 12 ? hour - 12 : hour;
+                return `${displayHour}${ampm}`;
+            });
+
+            const option = {
+                backgroundColor: 'transparent',
+                grid: {
+                    height: '75%',
+                    top: '10%',
+                    left: '12%',
+                    right: '12%',
+                    bottom: '15%'
+                },
+                xAxis: {
+                    type: 'category',
+                    data: timeLabels,
+                    splitArea: {
+                        show: true
+                    },
+                    axisLabel: {
+                        color: '#f5f5f5',
+                        fontSize: 9,
+                        rotate: 45,
+                        interval: Math.max(1, Math.floor(timeLabels.length / 12)), // Show fewer labels
+                        margin: 8
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        }
+                    },
+                    axisTick: {
+                        show: false
+                    }
+                },
+                yAxis: {
+                    type: 'category',
+                    data: activityLabels,
+                    splitArea: {
+                        show: true
+                    },
+                    axisLabel: {
+                        color: '#f5f5f5',
+                        fontSize: 11,
+                        fontWeight: 'bold',
+                        margin: 8
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        }
+                    },
+                    axisTick: {
+                        show: false
+                    }
+                },
+                visualMap: {
+                    min: 0,
+                    max: 100,
+                    calculable: false,
+                    orient: 'vertical',
+                    right: '1%',
+                    top: '20%',
+                    itemWidth: 12,
+                    itemHeight: 100,
+                    inRange: {
+                        color: ['#ffffff', '#e6f3ff', '#b3d9ff', '#80bfff', '#4da6ff', '#1a8cff', '#0073e6', '#005ab3', '#004080']
+                    },
+                    text: ['High', 'Low'],
+                    textStyle: {
+                        color: '#f5f5f5',
+                        fontSize: 10
+                    },
+                    textGap: 5
+                },
+                series: [{
+                    name: 'Activity Intensity',
+                    type: 'heatmap',
+                    data: heatmapData,
+                    label: {
+                        show: false
+                    },
+                    itemStyle: {
+                        borderWidth: 0,
+                        borderColor: 'transparent',
+                        color: function(params) {
+                            const rowIndex = params.data[1];
+                            const value = params.data[2];
+                            const base = baseColors[rowIndex % baseColors.length];
+                            return mixWithWhite(base, Math.max(0, Math.min(1, value / 100)));
+                        }
+                    },
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }],
+                tooltip: {
+                    position: 'top',
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    borderColor: 'rgba(255, 255, 255, 0.2)',
+                    textStyle: {
+                        color: '#f5f5f5'
+                    },
+                    formatter: function(params) {
+                        const activity = activityLabels[params.data[1]];
+                        const time = timeSlots[params.data[0]];
+                        const value = params.data[2];
+                        return `<strong>${activity}</strong><br/>
+                                Time: ${time}<br/>
+                                Intensity: ${value}%`;
+                    }
+                }
+            };
+            
+            heatmapChart.setOption(option);
+        }
+        
+        // Update feedback section
+        function updateFeedbackSection(data) {
+            const feedbackList = document.getElementById('feedback-list');
+            feedbackList.innerHTML = '';
+            
+            Object.entries(data.feedback).forEach(([category, info]) => {
+                const li = document.createElement('li');
+                const statusClass = info.status.toLowerCase().replace(' ', '-');
+                li.innerHTML = `${category}: <span class="status-${statusClass}">${info.status}</span>`;
+                feedbackList.appendChild(li);
+            });
+        }
+        
+        // Update advice section
+        function updateAdviceSection(data) {
+            const adviceList = document.getElementById('advice-list');
+            adviceList.innerHTML = '';
+            
+            data.advice_list.forEach(advice => {
+                const li = document.createElement('li');
+                li.textContent = advice.advice;
+                adviceList.appendChild(li);
+            });
+        }
+        
+        // Fallback data loading
+        function loadFallbackData() {
+            // Alert Log -> N/A
+            const alertLog = document.getElementById('alert-log');
+            alertLog.innerHTML = `<li>N/A</li>`;
+
+            // Profile info -> N/A
+            document.getElementById('name').textContent = 'N/A';
+            document.getElementById('gender').textContent = 'N/A';
+            document.getElementById('age').textContent = 'N/A';
+            document.getElementById('contact').textContent = 'N/A';
+            document.getElementById('wellness-status').textContent = 'N/A';
+
+            // Feedback -> N/A
+            const feedbackList = document.getElementById('feedback-list');
+            feedbackList.innerHTML = `<li>N/A</li>`;
+
+            // Advice -> N/A
+            const adviceList = document.getElementById('advice-list');
+            adviceList.innerHTML = `<li>N/A</li>`;
+
+            // Heatmap -> show no data banner
+            const heatmapContainer = document.getElementById('heatmap-container');
+            if (heatmapChart) {
+                heatmapChart.dispose();
+                heatmapChart = null;
+            }
+            heatmapContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#f5f5f5;font-size:14px;">no data to be displayed</div>';
+
+            // Radar fallback: zeros
+            createFallbackCharts();
+        }
+        
+        // Create fallback charts with minimal data
+        function createFallbackCharts() {
+            // Fallback radar chart (zeros)
+            const fallbackRadarData = {
+                categories: ['Sleep', 'Activity', 'Social', 'Eating', 'Drinking', 'Sitting'],
+                scores: {
+                    'Sleep': 0,
+                    'Activity': 0,
+                    'Social': 0,
+                    'Eating': 0,
+                    'Drinking': 0,
+                    'Sitting': 0
+                },
+                max_score: 100
+            };
+            createRadarChart(fallbackRadarData);
+            
+            // For heatmap, data only from JSON (already handled above)
+            console.warn('Heatmap data could not be loaded from backend_data/temporal_heatmap_data.json');
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (heatmapChart) {
+                heatmapChart.resize();
+            }
+            if (radarChart) {
+                radarChart.resize();
+            }
+        });
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAllData();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "feedback": {
+    "Social": { "status": "Good" },
+    "Sleeping": { "status": "More needed" },
+    "Sitting": { "status": "Moderate" },
+    "Eating": { "status": "Moderate" },
+    "Drinking": { "status": "More Needed" },
+    "Other": { "status": "Good" }
+  }
+}

@@ -1,0 +1,100 @@
+# Configuration for YOLO11 Keypoint Detection Self-Training
+
+# Dataset configuration
+dataset:
+  coco:
+    path: "path_to_your_root/datasets/coco"
+    train: "train2017"
+    val: "val2017" 
+    annotations: "annotations"
+    keypoints: 17  # COCO has 17 keypoints
+  
+  custom:
+    path: "path_to_your_root/datasets/snh-pose/images"
+    train: "train"
+    val: "val"
+    annotations: "path_to_your_root/datasets/snh-pose/labels"
+    keypoints: 17  # Adjust based on your dataset
+  
+  # Data augmentation
+  augmentation:
+    mosaic: 1.0
+    mixup: 0.1
+    copy_paste: 0.1
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4
+    degrees: 0.0
+    translate: 0.1
+    scale: 0.5
+    shear: 0.0
+    perspective: 0.0
+    flipud: 0.0
+    fliplr: 0.5
+
+# Model configuration
+model:
+  name: "yolo11n-pose.pt"  # yolo11n-pose, yolo11s-pose, yolo11m-pose, yolo11l-pose, yolo11x-pose
+  input_size: 640
+  confidence_threshold: 0.25
+  iou_threshold: 0.7
+  max_detections: 300
+
+# Training configuration
+training:
+  epochs: 300
+  batch_size: 16
+  learning_rate: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  warmup_epochs: 3
+  warmup_momentum: 0.8
+  warmup_bias_lr: 0.1
+  
+  # Optimizer
+  optimizer: "SGD"  # SGD, Adam, AdamW
+  
+  # Scheduler
+  scheduler: "cosine"  # linear, cosine
+  
+  # Early stopping
+  patience: 50
+  
+  # Model saving
+  save_period: 10
+  save_best: true
+
+# Self-training configuration
+self_training:
+  enabled: true
+  pseudo_label_threshold: 0.9
+  max_iterations: 5
+  unlabeled_data_ratio: 0.3
+  teacher_student_ema: 0.999
+  consistency_weight: 1.0
+  ramp_up_epochs: 30
+
+# Evaluation configuration
+evaluation:
+  metrics: ["precision", "recall", "mAP50", "mAP50-95"]
+  save_plots: true
+  save_json: true
+  conf_threshold: 0.001
+  iou_threshold: 0.6
+
+# Logging configuration
+logging:
+  wandb:
+    enabled: false
+    project: "yolo11-keypoint-detection"
+    entity: null
+  
+  tensorboard:
+    enabled: true
+    log_dir: "runs"
+  
+  level: "INFO"
+
+# Hardware configuration
+device: "auto"  # auto, cpu, 0, 1, 2, 3... (GPU IDs)
+workers: 8 

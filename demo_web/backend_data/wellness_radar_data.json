@@ -1,0 +1,12 @@
+{
+  "categories": ["Sleep", "Activity", "Social", "Eating", "Drinking", "Sitting"],
+  "scores": {
+    "Sleep": 65,
+    "Activity": 80,
+    "Social": 90,
+    "Eating": 75,
+    "Drinking": 60,
+    "Sitting": 85
+  },
+  "max_score": 100
+}

@@ -1,0 +1,69 @@
+# COCO Dataset Configuration for YOLO11 Keypoint Detection
+
+# Dataset paths
+path: data/coco  # Root directory of the dataset
+train: train2017  # Training images directory
+val: val2017      # Validation images directory
+test: test2017    # Test images directory (optional)
+
+# Class information
+nc: 1  # Number of classes
+names: ['person']  # Class names
+
+# Keypoint information  
+kpt_shape: [17, 3]  # [num_keypoints, 3] for x,y,visibility
+
+# COCO keypoint names (17 keypoints)
+keypoint_names: [
+  'nose',
+  'left_eye', 'right_eye', 
+  'left_ear', 'right_ear',
+  'left_shoulder', 'right_shoulder',
+  'left_elbow', 'right_elbow',
+  'left_wrist', 'right_wrist',
+  'left_hip', 'right_hip',
+  'left_knee', 'right_knee',
+  'left_ankle', 'right_ankle'
+]
+
+# Flip indices for horizontal flip augmentation
+# Maps left-right keypoint pairs
+flip_idx: [0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9, 12, 11, 14, 13, 16, 15]
+
+# COCO keypoint skeleton for visualization
+# Each pair represents connected keypoints
+skeleton: [
+  [16, 14], [14, 12], [17, 15], [15, 13], [12, 13],  # legs
+  [6, 12], [7, 13], [6, 7],                          # torso
+  [6, 8], [7, 9], [8, 10], [9, 11],                 # arms
+  [2, 3], [1, 2], [1, 3], [2, 4], [3, 5], [4, 6], [5, 7]  # head
+]
+
+# Joint colors for visualization (RGB)
+joint_colors: [
+  [255, 0, 0],     # nose
+  [255, 85, 0],    # left_eye
+  [255, 170, 0],   # right_eye
+  [255, 255, 0],   # left_ear
+  [170, 255, 0],   # right_ear
+  [85, 255, 0],    # left_shoulder
+  [0, 255, 0],     # right_shoulder
+  [0, 255, 85],    # left_elbow
+  [0, 255, 170],   # right_elbow
+  [0, 255, 255],   # left_wrist
+  [0, 170, 255],   # right_wrist
+  [0, 85, 255],    # left_hip
+  [0, 0, 255],     # right_hip
+  [85, 0, 255],    # left_knee
+  [170, 0, 255],   # right_knee
+  [255, 0, 255],   # left_ankle
+  [255, 0, 170]    # right_ankle
+]
+
+# Limb colors for skeleton visualization (RGB)
+limb_colors: [
+  [255, 0, 0], [255, 85, 0], [255, 170, 0], [255, 255, 0], [170, 255, 0],
+  [85, 255, 0], [0, 255, 0], [0, 255, 85], [0, 255, 170], [0, 255, 255],
+  [0, 170, 255], [0, 85, 255], [0, 0, 255], [85, 0, 255], [170, 0, 255],
+  [255, 0, 255], [255, 0, 170], [255, 0, 85]
+] 

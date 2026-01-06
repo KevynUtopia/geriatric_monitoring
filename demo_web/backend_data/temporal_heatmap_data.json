@@ -1,0 +1,624 @@
+{
+  "activities": [
+    "Sleep",
+    "Activity",
+    "Social",
+    "Eating",
+    "Drinking",
+    "Sitting",
+    "Standing",
+    "Watching TV"
+  ],
+  "data": {
+    "08:00": {
+      "Sleep": 60,
+      "Activity": 0,
+      "Social": 63,
+      "Eating": 85,
+      "Drinking": 49,
+      "Sitting": 74,
+      "Standing": 52,
+      "Watching TV": 0
+    },
+    "08:10": {
+      "Sleep": 58,
+      "Activity": 0,
+      "Social": 71,
+      "Eating": 85,
+      "Drinking": 75,
+      "Sitting": 56,
+      "Standing": 49,
+      "Watching TV": 0
+    },
+    "08:20": {
+      "Sleep": 55,
+      "Activity": 0,
+      "Social": 76,
+      "Eating": 20,
+      "Drinking": 55,
+      "Sitting": 87,
+      "Standing": 22,
+      "Watching TV": 0
+    },
+    "08:30": {
+      "Sleep": 54,
+      "Activity": 0,
+      "Social": 83,
+      "Eating": 12,
+      "Drinking": 48,
+      "Sitting": 88,
+      "Standing": 65,
+      "Watching TV": 0
+    },
+    "08:40": {
+      "Sleep": 52,
+      "Activity": 0,
+      "Social": 72,
+      "Eating": 12,
+      "Drinking": 67,
+      "Sitting": 75,
+      "Standing": 49,
+      "Watching TV": 0
+    },
+    "08:50": {
+      "Sleep": 49,
+      "Activity": 0,
+      "Social": 81,
+      "Eating": 14,
+      "Drinking": 77,
+      "Sitting": 67,
+      "Standing": 30,
+      "Watching TV": 0
+    },
+    "09:00": {
+      "Sleep": 48,
+      "Activity": 0,
+      "Social": 49,
+      "Eating": 12,
+      "Drinking": 77,
+      "Sitting": 43,
+      "Standing": 67,
+      "Watching TV": 0
+    },
+    "09:10": {
+      "Sleep": 46,
+      "Activity": 0,
+      "Social": 54,
+      "Eating": 4,
+      "Drinking": 35,
+      "Sitting": 53,
+      "Standing": 64,
+      "Watching TV": 0
+    },
+    "09:20": {
+      "Sleep": 43,
+      "Activity": 0,
+      "Social": 41,
+      "Eating": 25,
+      "Drinking": 31,
+      "Sitting": 50,
+      "Standing": 31,
+      "Watching TV": 0
+    },
+    "09:30": {
+      "Sleep": 42,
+      "Activity": 0,
+      "Social": 57,
+      "Eating": 6,
+      "Drinking": 42,
+      "Sitting": 79,
+      "Standing": 39,
+      "Watching TV": 0
+    },
+    "09:40": {
+      "Sleep": 40,
+      "Activity": 4,
+      "Social": 82,
+      "Eating": 18,
+      "Drinking": 71,
+      "Sitting": 44,
+      "Standing": 63,
+      "Watching TV": 0
+    },
+    "09:50": {
+      "Sleep": 37,
+      "Activity": 9,
+      "Social": 47,
+      "Eating": 14,
+      "Drinking": 28,
+      "Sitting": 62,
+      "Standing": 33,
+      "Watching TV": 0
+    },
+    "10:00": {
+      "Sleep": 36,
+      "Activity": 14,
+      "Social": 40,
+      "Eating": 16,
+      "Drinking": 43,
+      "Sitting": 77,
+      "Standing": 46,
+      "Watching TV": 0
+    },
+    "10:10": {
+      "Sleep": 34,
+      "Activity": 19,
+      "Social": 66,
+      "Eating": 16,
+      "Drinking": 27,
+      "Sitting": 62,
+      "Standing": 50,
+      "Watching TV": 0
+    },
+    "10:20": {
+      "Sleep": 31,
+      "Activity": 23,
+      "Social": 55,
+      "Eating": 24,
+      "Drinking": 53,
+      "Sitting": 87,
+      "Standing": 36,
+      "Watching TV": 0
+    },
+    "10:30": {
+      "Sleep": 30,
+      "Activity": 28,
+      "Social": 32,
+      "Eating": 21,
+      "Drinking": 70,
+      "Sitting": 55,
+      "Standing": 52,
+      "Watching TV": 0
+    },
+    "10:40": {
+      "Sleep": 28,
+      "Activity": 33,
+      "Social": 38,
+      "Eating": 8,
+      "Drinking": 45,
+      "Sitting": 63,
+      "Standing": 43,
+      "Watching TV": 0
+    },
+    "10:50": {
+      "Sleep": 25,
+      "Activity": 38,
+      "Social": 64,
+      "Eating": 19,
+      "Drinking": 40,
+      "Sitting": 49,
+      "Standing": 65,
+      "Watching TV": 0
+    },
+    "11:00": {
+      "Sleep": 24,
+      "Activity": 42,
+      "Social": 30,
+      "Eating": 9,
+      "Drinking": 27,
+      "Sitting": 67,
+      "Standing": 27,
+      "Watching TV": 0
+    },
+    "11:10": {
+      "Sleep": 22,
+      "Activity": 47,
+      "Social": 65,
+      "Eating": 8,
+      "Drinking": 27,
+      "Sitting": 55,
+      "Standing": 48,
+      "Watching TV": 0
+    },
+    "11:20": {
+      "Sleep": 19,
+      "Activity": 52,
+      "Social": 32,
+      "Eating": 0,
+      "Drinking": 35,
+      "Sitting": 44,
+      "Standing": 36,
+      "Watching TV": 0
+    },
+    "11:30": {
+      "Sleep": 18,
+      "Activity": 57,
+      "Social": 58,
+      "Eating": 24,
+      "Drinking": 43,
+      "Sitting": 78,
+      "Standing": 46,
+      "Watching TV": 0
+    },
+    "11:40": {
+      "Sleep": 16,
+      "Activity": 61,
+      "Social": 56,
+      "Eating": 17,
+      "Drinking": 77,
+      "Sitting": 68,
+      "Standing": 57,
+      "Watching TV": 0
+    },
+    "11:50": {
+      "Sleep": 13,
+      "Activity": 66,
+      "Social": 33,
+      "Eating": 85,
+      "Drinking": 33,
+      "Sitting": 48,
+      "Standing": 43,
+      "Watching TV": 0
+    },
+    "12:00": {
+      "Sleep": 12,
+      "Activity": 71,
+      "Social": 56,
+      "Eating": 85,
+      "Drinking": 52,
+      "Sitting": 75,
+      "Standing": 63,
+      "Watching TV": 0
+    },
+    "12:10": {
+      "Sleep": 10,
+      "Activity": 76,
+      "Social": 73,
+      "Eating": 85,
+      "Drinking": 21,
+      "Sitting": 58,
+      "Standing": 43,
+      "Watching TV": 0
+    },
+    "12:20": {
+      "Sleep": 7,
+      "Activity": 80,
+      "Social": 81,
+      "Eating": 2,
+      "Drinking": 20,
+      "Sitting": 75,
+      "Standing": 53,
+      "Watching TV": 0
+    },
+    "12:30": {
+      "Sleep": 6,
+      "Activity": 85,
+      "Social": 85,
+      "Eating": 23,
+      "Drinking": 36,
+      "Sitting": 87,
+      "Standing": 48,
+      "Watching TV": 0
+    },
+    "12:40": {
+      "Sleep": 4,
+      "Activity": 90,
+      "Social": 50,
+      "Eating": 18,
+      "Drinking": 77,
+      "Sitting": 81,
+      "Standing": 56,
+      "Watching TV": 0
+    },
+    "12:50": {
+      "Sleep": 1,
+      "Activity": 95,
+      "Social": 62,
+      "Eating": 13,
+      "Drinking": 47,
+      "Sitting": 61,
+      "Standing": 33,
+      "Watching TV": 0
+    },
+    "13:00": {
+      "Sleep": 0,
+      "Activity": 100,
+      "Social": 74,
+      "Eating": 18,
+      "Drinking": 67,
+      "Sitting": 42,
+      "Standing": 32,
+      "Watching TV": 0
+    },
+    "13:10": {
+      "Sleep": 0,
+      "Activity": 95,
+      "Social": 60,
+      "Eating": 10,
+      "Drinking": 58,
+      "Sitting": 52,
+      "Standing": 25,
+      "Watching TV": 0
+    },
+    "13:20": {
+      "Sleep": 0,
+      "Activity": 90,
+      "Social": 68,
+      "Eating": 5,
+      "Drinking": 57,
+      "Sitting": 47,
+      "Standing": 70,
+      "Watching TV": 0
+    },
+    "13:30": {
+      "Sleep": 0,
+      "Activity": 85,
+      "Social": 83,
+      "Eating": 20,
+      "Drinking": 77,
+      "Sitting": 90,
+      "Standing": 46,
+      "Watching TV": 0
+    },
+    "13:40": {
+      "Sleep": 0,
+      "Activity": 80,
+      "Social": 58,
+      "Eating": 8,
+      "Drinking": 80,
+      "Sitting": 59,
+      "Standing": 44,
+      "Watching TV": 0
+    },
+    "13:50": {
+      "Sleep": 0,
+      "Activity": 76,
+      "Social": 49,
+      "Eating": 13,
+      "Drinking": 21,
+      "Sitting": 90,
+      "Standing": 65,
+      "Watching TV": 0
+    },
+    "14:00": {
+      "Sleep": 0,
+      "Activity": 71,
+      "Social": 35,
+      "Eating": 25,
+      "Drinking": 30,
+      "Sitting": 88,
+      "Standing": 60,
+      "Watching TV": 0
+    },
+    "14:10": {
+      "Sleep": 0,
+      "Activity": 66,
+      "Social": 65,
+      "Eating": 5,
+      "Drinking": 28,
+      "Sitting": 59,
+      "Standing": 47,
+      "Watching TV": 0
+    },
+    "14:20": {
+      "Sleep": 0,
+      "Activity": 61,
+      "Social": 49,
+      "Eating": 6,
+      "Drinking": 72,
+      "Sitting": 50,
+      "Standing": 58,
+      "Watching TV": 0
+    },
+    "14:30": {
+      "Sleep": 0,
+      "Activity": 57,
+      "Social": 56,
+      "Eating": 3,
+      "Drinking": 45,
+      "Sitting": 44,
+      "Standing": 55,
+      "Watching TV": 0
+    },
+    "14:40": {
+      "Sleep": 0,
+      "Activity": 52,
+      "Social": 45,
+      "Eating": 6,
+      "Drinking": 55,
+      "Sitting": 63,
+      "Standing": 59,
+      "Watching TV": 0
+    },
+    "14:50": {
+      "Sleep": 0,
+      "Activity": 47,
+      "Social": 41,
+      "Eating": 22,
+      "Drinking": 39,
+      "Sitting": 69,
+      "Standing": 45,
+      "Watching TV": 0
+    },
+    "15:00": {
+      "Sleep": 0,
+      "Activity": 42,
+      "Social": 54,
+      "Eating": 6,
+      "Drinking": 34,
+      "Sitting": 89,
+      "Standing": 70,
+      "Watching TV": 0
+    },
+    "15:10": {
+      "Sleep": 0,
+      "Activity": 38,
+      "Social": 46,
+      "Eating": 8,
+      "Drinking": 55,
+      "Sitting": 64,
+      "Standing": 57,
+      "Watching TV": 0
+    },
+    "15:20": {
+      "Sleep": 0,
+      "Activity": 33,
+      "Social": 46,
+      "Eating": 7,
+      "Drinking": 25,
+      "Sitting": 42,
+      "Standing": 57,
+      "Watching TV": 0
+    },
+    "15:30": {
+      "Sleep": 0,
+      "Activity": 28,
+      "Social": 36,
+      "Eating": 0,
+      "Drinking": 30,
+      "Sitting": 60,
+      "Standing": 22,
+      "Watching TV": 0
+    },
+    "15:40": {
+      "Sleep": 0,
+      "Activity": 23,
+      "Social": 81,
+      "Eating": 10,
+      "Drinking": 58,
+      "Sitting": 80,
+      "Standing": 69,
+      "Watching TV": 0
+    },
+    "15:50": {
+      "Sleep": 0,
+      "Activity": 19,
+      "Social": 32,
+      "Eating": 13,
+      "Drinking": 40,
+      "Sitting": 47,
+      "Standing": 38,
+      "Watching TV": 0
+    },
+    "16:00": {
+      "Sleep": 0,
+      "Activity": 14,
+      "Social": 56,
+      "Eating": 22,
+      "Drinking": 50,
+      "Sitting": 89,
+      "Standing": 55,
+      "Watching TV": 0
+    },
+    "16:10": {
+      "Sleep": 0,
+      "Activity": 9,
+      "Social": 31,
+      "Eating": 1,
+      "Drinking": 71,
+      "Sitting": 46,
+      "Standing": 29,
+      "Watching TV": 5
+    },
+    "16:20": {
+      "Sleep": 0,
+      "Activity": 4,
+      "Social": 85,
+      "Eating": 12,
+      "Drinking": 47,
+      "Sitting": 75,
+      "Standing": 43,
+      "Watching TV": 11
+    },
+    "16:30": {
+      "Sleep": 0,
+      "Activity": 0,
+      "Social": 56,
+      "Eating": 1,
+      "Drinking": 51,
+      "Sitting": 41,
+      "Standing": 62,
+      "Watching TV": 17
+    },
+    "16:40": {
+      "Sleep": 0,
+      "Activity": 0,
+      "Social": 39,
+      "Eating": 15,
+      "Drinking": 61,
+      "Sitting": 51,
+      "Standing": 57,
+      "Watching TV": 23
+    },
+    "16:50": {
+      "Sleep": 0,
+      "Activity": 0,
+      "Social": 81,
+      "Eating": 4,
+      "Drinking": 75,
+      "Sitting": 41,
+      "Standing": 33,
+      "Watching TV": 29
+    },
+    "17:00": {
+      "Sleep": 0,
+      "Activity": 0,
+      "Social": 83,
+      "Eating": 0,
+      "Drinking": 61,
+      "Sitting": 55,
+      "Standing": 29,
+      "Watching TV": 35
+    },
+    "17:10": {
+      "Sleep": 0,
+      "Activity": 0,
+      "Social": 82,
+      "Eating": 24,
+      "Drinking": 29,
+      "Sitting": 89,
+      "Standing": 44,
+      "Watching TV": 40
+    },
+    "17:20": {
+      "Sleep": 0,
+      "Activity": 0,
+      "Social": 59,
+      "Eating": 13,
+      "Drinking": 52,
+      "Sitting": 84,
+      "Standing": 50,
+      "Watching TV": 46
+    },
+    "17:30": {
+      "Sleep": 0,
+      "Activity": 0,
+      "Social": 70,
+      "Eating": 24,
+      "Drinking": 69,
+      "Sitting": 59,
+      "Standing": 66,
+      "Watching TV": 52
+    },
+    "17:40": {
+      "Sleep": 0,
+      "Activity": 0,
+      "Social": 59,
+      "Eating": 3,
+      "Drinking": 45,
+      "Sitting": 63,
+      "Standing": 33,
+      "Watching TV": 58
+    },
+    "17:50": {
+      "Sleep": 0,
+      "Activity": 0,
+      "Social": 85,
+      "Eating": 85,
+      "Drinking": 42,
+      "Sitting": 71,
+      "Standing": 24,
+      "Watching TV": 64
+    },
+    "18:00": {
+      "Sleep": 0,
+      "Activity": 0,
+      "Social": 68,
+      "Eating": 85,
+      "Drinking": 46,
+      "Sitting": 58,
+      "Standing": 44,
+      "Watching TV": 70
+    }
+  }
+}

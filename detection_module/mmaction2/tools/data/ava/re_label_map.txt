@@ -1,0 +1,40 @@
+1: bend/bow (at the waist)
+5: fall down
+6: get up
+7: jump/leap
+8: lie/sleep
+10: run/jog
+11: sit
+12: stand
+14: walk
+17: carry/hold (an object)
+22: close (e.g., a door, a box)
+26: dress/put on clothing
+27: drink
+29: eat
+30: enter
+34: hit (an object)
+36: lift/pick up
+37: listen (e.g., to music)
+38: open (e.g., a window, a car door)
+43: point to (an object)
+45: pull (an object)
+46: push (an object)
+47: put down
+48: read
+58: throw
+59: touch (an object)
+60: turn (e.g., a screwdriver)
+61: watch (e.g., TV)
+65: give/serve (an object) to (a person)
+66: grab (a person)
+67: hand clap
+68: hand shake
+69: hand wave
+70: hug (a person)
+73: lift (a person)
+74: listen to (a person)
+76: push (another person)
+78: take (an object) from (a person)
+79: talk to (e.g., self, a person, a group)
+80: watch (a person)

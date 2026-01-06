@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporal Activity Heatmap</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+        #heatmap {
+            width: 100%;
+            height: 600px;
+            margin: 0 auto;
+        }
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 18px;
+            color: #666;
+        }
+        .legend {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Temporal Activity Heatmap</h1>
+        <div id="heatmap">
+            <div class="loading">Loading heatmap data...</div>
+        </div>
+        <div class="legend">
+            <p>Darker blue indicates higher activity intensity | Lighter blue indicates lower activity intensity</p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize ECharts
+        const chartDom = document.getElementById('heatmap');
+        const myChart = echarts.init(chartDom);
+
+        // Load data from JSON file
+        fetch('backend_data/temporal_heatmap_data.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                createHeatmap(data);
+            })
+            .catch(error => {
+                console.error('Error loading data:', error);
+                document.getElementById('heatmap').innerHTML = `
+                    <div class="loading">
+                        <h3>Error loading data</h3>
+                        <p>This is likely due to CORS restrictions when opening the file directly in a browser.</p>
+                        <p><strong>Solution:</strong> Please serve this directory using a local web server:</p>
+                        <ul style="text-align: left; max-width: 400px; margin: 0 auto;">
+                            <li>Open terminal/command prompt</li>
+                            <li>Navigate to this directory</li>
+                            <li>Run: <code>python3 -m http.server 8000</code></li>
+                            <li>Open: <a href="http://localhost:8000/heatmap.html" target="_blank">http://localhost:8000/heatmap.html</a></li>
+                        </ul>
+                        <p style="margin-top: 20px;"><strong>Alternative:</strong> If you have Node.js installed, you can also use: <code>npx serve .</code></p>
+                    </div>`;
+            });
+
+        function createHeatmap(data) {
+            const activities = data.activities;
+            const timeSlots = Object.keys(data.data).sort();
+            
+            // Prepare data for ECharts heatmap
+            const heatmapData = [];
+            
+            activities.forEach((activity, activityIndex) => {
+                timeSlots.forEach((timeSlot, timeIndex) => {
+                    const value = data.data[timeSlot][activity] || 0;
+                    heatmapData.push([timeIndex, activityIndex, value]);
+                });
+            });
+
+            // Format time labels for better readability
+            const timeLabels = timeSlots.map(time => {
+                const [hours, minutes] = time.split(':');
+                const hour = parseInt(hours);
+                const ampm = hour >= 12 ? 'pm' : 'am';
+                const displayHour = hour === 0 ? 12 : hour > 12 ? hour - 12 : hour;
+                return `${displayHour}${ampm}`;
+            });
+
+            const option = {
+                title: {
+                    text: '24-Hour Activity Pattern',
+                    left: 'center',
+                    textStyle: {
+                        fontSize: 18,
+                        fontWeight: 'normal'
+                    }
+                },
+                tooltip: {
+                    position: 'top',
+                    formatter: function(params) {
+                        const activity = activities[params.data[1]];
+                        const time = timeSlots[params.data[0]];
+                        const value = params.data[2];
+                        return `<strong>${activity}</strong><br/>
+                                Time: ${time}<br/>
+                                Intensity: ${value}%`;
+                    }
+                },
+                grid: {
+                    height: '70%',
+                    top: '15%',
+                    left: '15%',
+                    right: '5%'
+                },
+                xAxis: {
+                    type: 'category',
+                    data: timeLabels,
+                    splitArea: {
+                        show: true
+                    },
+                    axisLabel: {
+                        rotate: 45,
+                        fontSize: 10
+                    },
+                    name: 'Time of Day',
+                    nameLocation: 'middle',
+                    nameGap: 50
+                },
+                yAxis: {
+                    type: 'category',
+                    data: activities,
+                    splitArea: {
+                        show: true
+                    },
+                    axisLabel: {
+                        fontSize: 12,
+                        fontWeight: 'bold'
+                    },
+                    name: 'Activities',
+                    nameLocation: 'middle',
+                    nameGap: 80
+                },
+                visualMap: {
+                    min: 0,
+                    max: 100,
+                    calculable: true,
+                    orient: 'horizontal',
+                    left: 'center',
+                    bottom: '5%',
+                    inRange: {
+                        color: ['#ffffff', '#e6f3ff', '#b3d9ff', '#80bfff', '#4da6ff', '#1a8cff', '#0073e6', '#005ab3', '#004080']
+                    },
+                    text: ['High', 'Low'],
+                    textStyle: {
+                        color: '#333'
+                    }
+                },
+                series: [{
+                    name: 'Activity Intensity',
+                    type: 'heatmap',
+                    data: heatmapData,
+                    label: {
+                        show: false
+                    },
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }]
+            };
+
+            myChart.setOption(option);
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            myChart.resize();
+        });
+    </script>
+</body>
+</html>
