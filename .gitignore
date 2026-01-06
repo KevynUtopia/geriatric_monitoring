@@ -3,3 +3,4 @@ detection_module/people_profile
 analyze_module/evaluate/__pycache__
 analyze_module/time_series_model/reduced_fa1
 analyze_module/time_series_model/weights
+/.idea
