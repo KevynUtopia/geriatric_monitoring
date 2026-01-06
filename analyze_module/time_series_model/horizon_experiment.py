@@ -12,7 +12,7 @@ from model import TimeSeriesForecastingModel
 
 def main():
     # Configuration
-    data_dir = "path_to_your_analysis_root/SNH/0_SYSTEM_RESULTS/detection_output/results_v7_alignment_soft/DATASET"
+    data_dir = "path_to_your_analysis_root/SNH/0_SYSTEM_RESULTS/detection_output/results_alignment_soft/DATASET"
     model_dir = "/Users/kevynzhang/codespace/SNH/time_series_model/weights"
     splits_file = "/Users/kevynzhang/codespace/SNH/data_splits.json"
     reduced_dir = "/Users/kevynzhang/codespace/SNH/time_series_model/reduced_fa1"

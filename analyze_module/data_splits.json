@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "data_directory": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET",
+    "data_directory": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET",
     "total_files": 450,
     "matched_files": 348,
     "unique_persons": 24,
@@ -17,56 +17,56 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_1.csv",
             "date_info": null,
             "rows": 5537,
             "size_bytes": 2040886
           },
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_1.csv",
             "date_info": null,
             "rows": 5216,
             "size_bytes": 1460109
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_1.csv",
             "date_info": null,
             "rows": 3827,
             "size_bytes": 1018469
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_1.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4580,
             "size_bytes": 1320538
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_1.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 4896,
             "size_bytes": 1394354
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_1.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 5131,
             "size_bytes": 1472689
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_1.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 2942,
             "size_bytes": 799891
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_1.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 4687,
             "size_bytes": 1457320
@@ -80,7 +80,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_1.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 4006,
             "size_bytes": 1020068
@@ -94,21 +94,21 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_1.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 5284,
             "size_bytes": 1928869
           },
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_1.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 5762,
             "size_bytes": 2146080
           },
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_1.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_1.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_1.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 5,
             "size_bytes": 1880
@@ -124,84 +124,84 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_2.csv",
             "date_info": null,
             "rows": 4797,
             "size_bytes": 1621732
           },
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_2.csv",
             "date_info": null,
             "rows": 5329,
             "size_bytes": 1469962
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_2.csv",
             "date_info": null,
             "rows": 5129,
             "size_bytes": 1666255
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_2.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4825,
             "size_bytes": 1332512
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_2.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 4626,
             "size_bytes": 1256583
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_2.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 5055,
             "size_bytes": 1350435
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_2.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 4175,
             "size_bytes": 1010489
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_2.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3896,
             "size_bytes": 1324529
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_2.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 5064,
             "size_bytes": 1788006
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_2.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 4872,
             "size_bytes": 1544158
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_2.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 7654,
             "size_bytes": 2448351
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_2.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 4813,
             "size_bytes": 1630539
@@ -215,7 +215,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_2.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 5226,
             "size_bytes": 1893843
@@ -229,35 +229,35 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_2.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 4831,
             "size_bytes": 1605967
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_2.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 5321,
             "size_bytes": 2023857
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_2.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 3276,
             "size_bytes": 928493
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_2.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 4972,
             "size_bytes": 1447485
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_2.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_2.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_2.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 473,
             "size_bytes": 131174
@@ -273,84 +273,84 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_3.csv",
             "date_info": null,
             "rows": 5674,
             "size_bytes": 1376808
           },
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_3.csv",
             "date_info": null,
             "rows": 3547,
             "size_bytes": 674941
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_3.csv",
             "date_info": null,
             "rows": 5790,
             "size_bytes": 1100952
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_3.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4218,
             "size_bytes": 1006480
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_3.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 2235,
             "size_bytes": 565678
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_3.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 5142,
             "size_bytes": 1322649
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_3.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 5124,
             "size_bytes": 1356112
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_3.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 4097,
             "size_bytes": 1092839
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_3.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 4824,
             "size_bytes": 917412
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_3.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 5593,
             "size_bytes": 1560195
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_3.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 4832,
             "size_bytes": 947770
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_3.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 5521,
             "size_bytes": 1595274
@@ -364,7 +364,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_3.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 3225,
             "size_bytes": 629987
@@ -378,35 +378,35 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_3.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 5590,
             "size_bytes": 1409924
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_3.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 5272,
             "size_bytes": 1002533
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_3.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 3669,
             "size_bytes": 1044835
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_3.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 1886,
             "size_bytes": 383189
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_3.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_3.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_3.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 1628,
             "size_bytes": 440283
@@ -422,84 +422,84 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_4.csv",
             "date_info": null,
             "rows": 4226,
             "size_bytes": 1057493
           },
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_4.csv",
             "date_info": null,
             "rows": 5384,
             "size_bytes": 1024984
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_4.csv",
             "date_info": null,
             "rows": 4396,
             "size_bytes": 838902
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_4.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 3868,
             "size_bytes": 1047389
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_4.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 6906,
             "size_bytes": 1317731
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_4.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 5202,
             "size_bytes": 1432365
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_4.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 2884,
             "size_bytes": 548812
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_4.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 2296,
             "size_bytes": 437092
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_4.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 4045,
             "size_bytes": 770048
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_4.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 4270,
             "size_bytes": 969202
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_4.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 4574,
             "size_bytes": 926305
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_4.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 5302,
             "size_bytes": 1594552
@@ -513,7 +513,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_4.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 5376,
             "size_bytes": 1022370
@@ -527,35 +527,35 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_4.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 4140,
             "size_bytes": 969597
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_4.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 4732,
             "size_bytes": 899932
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_4.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 4546,
             "size_bytes": 1147576
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_4.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 1100,
             "size_bytes": 213424
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_4.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_4.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_4.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 1185,
             "size_bytes": 349732
@@ -571,28 +571,28 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_5.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_5.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_5.csv",
             "date_info": null,
             "rows": 4,
             "size_bytes": 1846
           },
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_5.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_5.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_5.csv",
             "date_info": null,
             "rows": 1,
             "size_bytes": 1048
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_5.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_5.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_5.csv",
             "date_info": null,
             "rows": 1383,
             "size_bytes": 321373
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_5.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_5.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_5.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 3212,
             "size_bytes": 843802
@@ -612,21 +612,21 @@
         "files": [
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_5.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_5.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_5.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 2846,
             "size_bytes": 661648
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_5.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_5.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_5.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 69,
             "size_bytes": 14045
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_5.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_5.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_5.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 9,
             "size_bytes": 2562
@@ -642,77 +642,77 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_6.csv",
             "date_info": null,
             "rows": 5257,
             "size_bytes": 1737814
           },
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_6.csv",
             "date_info": null,
             "rows": 5295,
             "size_bytes": 1454602
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_6.csv",
             "date_info": null,
             "rows": 5569,
             "size_bytes": 1766558
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_6.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 3891,
             "size_bytes": 1040050
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_6.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 4632,
             "size_bytes": 1266602
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_6.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 4619,
             "size_bytes": 1243138
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_6.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3524,
             "size_bytes": 1301117
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_6.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 4293,
             "size_bytes": 1167948
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_6.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 4600,
             "size_bytes": 1303072
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_6.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 7521,
             "size_bytes": 1948557
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_6.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 5538,
             "size_bytes": 1838800
@@ -726,7 +726,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_6.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 5670,
             "size_bytes": 1837075
@@ -740,28 +740,28 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_6.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 4532,
             "size_bytes": 1282341
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_6.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 5162,
             "size_bytes": 1705386
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_6.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 5499,
             "size_bytes": 1458281
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_6.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_6.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_6.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 5267,
             "size_bytes": 1412444
@@ -777,77 +777,77 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_7.csv",
             "date_info": null,
             "rows": 5368,
             "size_bytes": 1540056
           },
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_7.csv",
             "date_info": null,
             "rows": 5180,
             "size_bytes": 1429918
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_7.csv",
             "date_info": null,
             "rows": 5565,
             "size_bytes": 1833381
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_7.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 3926,
             "size_bytes": 1089119
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_7.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 4847,
             "size_bytes": 922956
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_7.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 5015,
             "size_bytes": 1732640
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_7.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 4940,
             "size_bytes": 1704471
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_7.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3822,
             "size_bytes": 1148471
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_7.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 4869,
             "size_bytes": 1535272
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_7.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 134,
             "size_bytes": 26752
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_7.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 5439,
             "size_bytes": 1823994
@@ -861,7 +861,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_7.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 5248,
             "size_bytes": 1606140
@@ -875,35 +875,35 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_7.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 5371,
             "size_bytes": 1571824
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_7.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 4549,
             "size_bytes": 1185614
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_7.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 4643,
             "size_bytes": 1074549
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_7.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 3496,
             "size_bytes": 665092
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_7.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_7.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_7.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 1330,
             "size_bytes": 382860
@@ -919,77 +919,77 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_8.csv",
             "date_info": null,
             "rows": 3941,
             "size_bytes": 751207
           },
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_8.csv",
             "date_info": null,
             "rows": 5340,
             "size_bytes": 1159871
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_8.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 3531,
             "size_bytes": 716107
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_8.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 1418,
             "size_bytes": 326565
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_8.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 3348,
             "size_bytes": 708581
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_8.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 3184,
             "size_bytes": 679887
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_8.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3464,
             "size_bytes": 823478
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_8.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 5730,
             "size_bytes": 1089792
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_8.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 3655,
             "size_bytes": 743743
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_8.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 5375,
             "size_bytes": 1164369
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_8.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 4548,
             "size_bytes": 1135023
@@ -1003,7 +1003,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_8.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 4462,
             "size_bytes": 988512
@@ -1017,35 +1017,35 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_8.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 5615,
             "size_bytes": 1198995
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_8.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 6035,
             "size_bytes": 1256133
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_8.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 3399,
             "size_bytes": 669482
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_8.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 3343,
             "size_bytes": 732308
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_8.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_8.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_8.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 953,
             "size_bytes": 231963
@@ -1061,49 +1061,49 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_9.csv",
             "date_info": null,
             "rows": 5031,
             "size_bytes": 1784485
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_9.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4078,
             "size_bytes": 1141187
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_9.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 4716,
             "size_bytes": 1316982
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_9.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 30,
             "size_bytes": 9342
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_9.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3606,
             "size_bytes": 1311500
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_9.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 4600,
             "size_bytes": 1285650
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_9.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 17,
             "size_bytes": 5356
@@ -1117,7 +1117,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_9.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 6218,
             "size_bytes": 2064424
@@ -1131,21 +1131,21 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_9.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 5341,
             "size_bytes": 1660308
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_9.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 3863,
             "size_bytes": 941148
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_9.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_9.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_9.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 1282,
             "size_bytes": 329160
@@ -1161,70 +1161,70 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_10.csv",
             "date_info": null,
             "rows": 5883,
             "size_bytes": 1122002
           },
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_10.csv",
             "date_info": null,
             "rows": 5297,
             "size_bytes": 1528808
           },
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_10.csv",
             "date_info": null,
             "rows": 6211,
             "size_bytes": 1181670
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_10.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4541,
             "size_bytes": 1270194
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_10.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 4243,
             "size_bytes": 1308170
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_10.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 3351,
             "size_bytes": 790041
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_10.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 4140,
             "size_bytes": 791019
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_10.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 968,
             "size_bytes": 185479
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_10.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 8015,
             "size_bytes": 2086727
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_10.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 3721,
             "size_bytes": 710090
@@ -1238,7 +1238,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_10.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 4,
             "size_bytes": 1838
@@ -1252,28 +1252,28 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_10.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 22,
             "size_bytes": 6751
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_10.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 5503,
             "size_bytes": 1518488
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_10.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 3170,
             "size_bytes": 607081
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_10.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_10.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_10.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 932,
             "size_bytes": 219200
@@ -1289,63 +1289,63 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_11.csv",
             "date_info": null,
             "rows": 3,
             "size_bytes": 1577
           },
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_11.csv",
             "date_info": null,
             "rows": 17,
             "size_bytes": 4169
           },
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_11.csv",
             "date_info": null,
             "rows": 5036,
             "size_bytes": 1352773
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_11.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4484,
             "size_bytes": 1512622
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_11.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 4289,
             "size_bytes": 1488934
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_11.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3730,
             "size_bytes": 1078934
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_11.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 1778,
             "size_bytes": 338661
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_11.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 4005,
             "size_bytes": 1158052
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_11.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 5236,
             "size_bytes": 1882527
@@ -1359,7 +1359,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_11.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 5020,
             "size_bytes": 1469623
@@ -1373,21 +1373,21 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_11.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 330,
             "size_bytes": 70515
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_11.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 4423,
             "size_bytes": 1065452
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_11.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_11.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_11.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 1208,
             "size_bytes": 336777
@@ -1403,63 +1403,63 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_12.csv",
             "date_info": null,
             "rows": 4540,
             "size_bytes": 1151540
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_12.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 3742,
             "size_bytes": 899645
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_12.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 590,
             "size_bytes": 164962
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_12.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 4589,
             "size_bytes": 1172911
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_12.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 4303,
             "size_bytes": 1177376
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_12.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 2547,
             "size_bytes": 619111
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_12.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 4030,
             "size_bytes": 1003229
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_12.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 3249,
             "size_bytes": 786590
           },
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_12.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 4089,
             "size_bytes": 987199
@@ -1473,7 +1473,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_12.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 3684,
             "size_bytes": 824961
@@ -1487,28 +1487,28 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_12.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 4382,
             "size_bytes": 989131
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_12.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 4854,
             "size_bytes": 981876
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_12.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 2359,
             "size_bytes": 483289
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_12.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_12.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_12.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 1420,
             "size_bytes": 394959
@@ -1524,49 +1524,49 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_13.csv",
             "date_info": null,
             "rows": 86,
             "size_bytes": 21708
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_13.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4292,
             "size_bytes": 1135270
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_13.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 397,
             "size_bytes": 111626
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_13.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 52,
             "size_bytes": 12453
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_13.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 22,
             "size_bytes": 6647
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_13.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 3257,
             "size_bytes": 883993
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_13.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 2915,
             "size_bytes": 738331
@@ -1580,7 +1580,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_13.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 2868,
             "size_bytes": 685964
@@ -1594,21 +1594,21 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_13.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 3667,
             "size_bytes": 1043211
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_13.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 188,
             "size_bytes": 44218
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_13.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_13.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_13.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 296,
             "size_bytes": 66448
@@ -1624,77 +1624,77 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_14.csv",
             "date_info": null,
             "rows": 2614,
             "size_bytes": 498657
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_14.csv",
             "date_info": null,
             "rows": 3093,
             "size_bytes": 590053
           },
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_14.csv",
             "date_info": null,
             "rows": 5166,
             "size_bytes": 983552
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_14.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 3045,
             "size_bytes": 755106
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_14.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 4841,
             "size_bytes": 1325566
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_14.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 3497,
             "size_bytes": 665360
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_14.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 2922,
             "size_bytes": 763827
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_14.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 20,
             "size_bytes": 5971
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_14.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 5837,
             "size_bytes": 1112938
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_14.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 3982,
             "size_bytes": 758092
           },
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_14.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 49,
             "size_bytes": 10166
@@ -1708,7 +1708,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_14.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 4396,
             "size_bytes": 837293
@@ -1722,28 +1722,28 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_14.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 5095,
             "size_bytes": 1101340
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_14.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 5658,
             "size_bytes": 1719218
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_14.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 2527,
             "size_bytes": 488524
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_14.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_14.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_14.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 1496,
             "size_bytes": 355746
@@ -1759,77 +1759,77 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_8_6_50_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_8_6_50_am_p_15.csv",
             "date_info": null,
             "rows": 3162,
             "size_bytes": 652554
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_15.csv",
             "date_info": null,
             "rows": 4488,
             "size_bytes": 1155543
           },
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_15.csv",
             "date_info": null,
             "rows": 4929,
             "size_bytes": 937694
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_15.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 3237,
             "size_bytes": 864465
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_15.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 3156,
             "size_bytes": 868774
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_15.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 3305,
             "size_bytes": 739597
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_15.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 4896,
             "size_bytes": 1287197
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_15.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 2848,
             "size_bytes": 772992
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_15.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 2934,
             "size_bytes": 797958
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_15.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 3503,
             "size_bytes": 954225
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_15.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 7556,
             "size_bytes": 1763650
@@ -1843,7 +1843,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_15.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 4031,
             "size_bytes": 1075363
@@ -1857,35 +1857,35 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_15.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 4069,
             "size_bytes": 1097756
           },
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_15.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 3448,
             "size_bytes": 898879
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_15.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 2889,
             "size_bytes": 550074
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_15.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 4268,
             "size_bytes": 880590
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_15.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_15.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_15.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 836,
             "size_bytes": 230458
@@ -1901,77 +1901,77 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_16.csv",
             "date_info": null,
             "rows": 4248,
             "size_bytes": 1097547
           },
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_16.csv",
             "date_info": null,
             "rows": 4708,
             "size_bytes": 896467
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_16.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4188,
             "size_bytes": 1055368
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_16.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 3946,
             "size_bytes": 813556
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_16.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 3428,
             "size_bytes": 873777
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_16.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 4176,
             "size_bytes": 794370
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_16.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3113,
             "size_bytes": 592879
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_16.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 4086,
             "size_bytes": 783213
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_16.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 3504,
             "size_bytes": 797719
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_16.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 3695,
             "size_bytes": 703370
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_16.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 5214,
             "size_bytes": 991902
@@ -1985,7 +1985,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_16.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 5148,
             "size_bytes": 1481276
@@ -1999,35 +1999,35 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_16.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 4065,
             "size_bytes": 928100
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_16.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 3802,
             "size_bytes": 1033531
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_16.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 5678,
             "size_bytes": 1088466
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_16.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 4346,
             "size_bytes": 826592
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_16.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_16.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_16.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 7,
             "size_bytes": 2650
@@ -2043,70 +2043,70 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_17.csv",
             "date_info": null,
             "rows": 4013,
             "size_bytes": 835131
           },
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_17.csv",
             "date_info": null,
             "rows": 4072,
             "size_bytes": 774610
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_17.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4198,
             "size_bytes": 1197058
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_17.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 3855,
             "size_bytes": 733314
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_17.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 3308,
             "size_bytes": 711344
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_17.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3447,
             "size_bytes": 926123
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_17.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 3130,
             "size_bytes": 717805
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_17.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 5017,
             "size_bytes": 954091
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_17.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 4506,
             "size_bytes": 857947
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_17.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 3824,
             "size_bytes": 904814
@@ -2120,7 +2120,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_17.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 34,
             "size_bytes": 9578
@@ -2134,28 +2134,28 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_17.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 4411,
             "size_bytes": 842433
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_17.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 1341,
             "size_bytes": 393172
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_17.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 3,
             "size_bytes": 1578
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_17.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_17.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_17.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 292,
             "size_bytes": 57253
@@ -2171,77 +2171,77 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_18.csv",
             "date_info": null,
             "rows": 3753,
             "size_bytes": 714345
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_18.csv",
             "date_info": null,
             "rows": 3537,
             "size_bytes": 672968
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_18.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4186,
             "size_bytes": 860900
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_18.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 1,
             "size_bytes": 1042
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_18.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 3029,
             "size_bytes": 630480
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_18.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 807,
             "size_bytes": 154182
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_18.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3326,
             "size_bytes": 675644
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_18.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 5582,
             "size_bytes": 1061502
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_18.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 4258,
             "size_bytes": 920331
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_18.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 2542,
             "size_bytes": 483997
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_18.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 4239,
             "size_bytes": 806262
@@ -2255,7 +2255,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_18.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 3945,
             "size_bytes": 750481
@@ -2269,28 +2269,28 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_18.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 4460,
             "size_bytes": 848720
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_18.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 4807,
             "size_bytes": 914275
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_18.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 4056,
             "size_bytes": 772883
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_18.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_18.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_18.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 2990,
             "size_bytes": 581908
@@ -2306,77 +2306,77 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_19.csv",
             "date_info": null,
             "rows": 2896,
             "size_bytes": 608498
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_19.csv",
             "date_info": null,
             "rows": 3914,
             "size_bytes": 981603
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_19.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 4706,
             "size_bytes": 1175390
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_19.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 3029,
             "size_bytes": 677361
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_19.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 4247,
             "size_bytes": 1178524
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_19.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 4111,
             "size_bytes": 784768
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_19.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3062,
             "size_bytes": 582784
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_19.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 3938,
             "size_bytes": 754754
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_19.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 3986,
             "size_bytes": 1009895
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_19.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 5422,
             "size_bytes": 1033383
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_19.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 3734,
             "size_bytes": 712471
@@ -2390,7 +2390,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_19.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 3418,
             "size_bytes": 788129
@@ -2404,35 +2404,35 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_19.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 4562,
             "size_bytes": 1211976
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_19.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 3797,
             "size_bytes": 1109489
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_19.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 2573,
             "size_bytes": 489722
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_19.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 3745,
             "size_bytes": 740082
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_19.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_19.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_19.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 367,
             "size_bytes": 86565
@@ -2448,56 +2448,56 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_20.csv",
             "date_info": null,
             "rows": 1861,
             "size_bytes": 549669
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_20.csv",
             "date_info": null,
             "rows": 1687,
             "size_bytes": 325758
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_20.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 5196,
             "size_bytes": 1060339
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_20.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 518,
             "size_bytes": 147362
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_20.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 2914,
             "size_bytes": 554512
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_20.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 992,
             "size_bytes": 292696
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_20.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 886,
             "size_bytes": 253191
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_20.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 791,
             "size_bytes": 229607
@@ -2511,7 +2511,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_20.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 2595,
             "size_bytes": 589764
@@ -2525,21 +2525,21 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_20.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 761,
             "size_bytes": 219546
           },
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_20.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 319,
             "size_bytes": 73935
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_20.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_20.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_20.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 364,
             "size_bytes": 78526
@@ -2555,77 +2555,77 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_21.csv",
             "date_info": null,
             "rows": 3870,
             "size_bytes": 741231
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_21.csv",
             "date_info": null,
             "rows": 5250,
             "size_bytes": 1294269
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_21.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 5101,
             "size_bytes": 1166788
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_21.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 3729,
             "size_bytes": 891627
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_21.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 4791,
             "size_bytes": 911139
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_21.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 4289,
             "size_bytes": 945501
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_21.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 3229,
             "size_bytes": 693905
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_21.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 5203,
             "size_bytes": 992614
           },
           {
             "filename": "ts_recording_2019_06_29_8_00_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_29_8_00_am_p_21.csv",
             "date_info": "2019_06_29_8_00_am",
             "rows": 5356,
             "size_bytes": 1036928
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_21.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 7198,
             "size_bytes": 1545039
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_21.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 4147,
             "size_bytes": 817631
@@ -2639,7 +2639,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_21.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 4790,
             "size_bytes": 912278
@@ -2653,35 +2653,35 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_21.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 4006,
             "size_bytes": 762389
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_21.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 5267,
             "size_bytes": 1001738
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_21.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 4966,
             "size_bytes": 944393
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_21.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 4877,
             "size_bytes": 928496
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_21.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_21.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_21.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 1882,
             "size_bytes": 359134
@@ -2697,63 +2697,63 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_22.csv",
             "date_info": null,
             "rows": 4799,
             "size_bytes": 1072022
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_22.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 1397,
             "size_bytes": 267062
           },
           {
             "filename": "ts_recording_2019_06_25_8_00_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_25_8_00_am_p_22.csv",
             "date_info": "2019_06_25_8_00_am",
             "rows": 5608,
             "size_bytes": 1136370
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_22.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 5681,
             "size_bytes": 1122490
           },
           {
             "filename": "ts_recording_2019_06_27_10_30_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_27_10_30_am_p_22.csv",
             "date_info": "2019_06_27_10_30_am",
             "rows": 4394,
             "size_bytes": 863685
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_22.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 4050,
             "size_bytes": 772754
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_22.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 4890,
             "size_bytes": 1116232
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_22.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 2049,
             "size_bytes": 447690
           },
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_22.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 4667,
             "size_bytes": 1039857
@@ -2767,7 +2767,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_22.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 750,
             "size_bytes": 146697
@@ -2781,21 +2781,21 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_22.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 5726,
             "size_bytes": 1181520
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_22.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 539,
             "size_bytes": 107815
           },
           {
             "filename": "ts_recording_2019_07_18_6_50_am_p_22.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_22.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_18_6_50_am_p_22.csv",
             "date_info": "2019_07_18_6_50_am",
             "rows": 916,
             "size_bytes": 244719
@@ -2811,42 +2811,42 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_23.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_23.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_23.csv",
             "date_info": null,
             "rows": 226,
             "size_bytes": 45054
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_23.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_23.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_23.csv",
             "date_info": null,
             "rows": 2962,
             "size_bytes": 566704
           },
           {
             "filename": "ts_recording_2019_06_24_8_05_am_p_23.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_23.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_24_8_05_am_p_23.csv",
             "date_info": "2019_06_24_8_05_am",
             "rows": 862,
             "size_bytes": 212825
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_23.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_23.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_23.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 2882,
             "size_bytes": 587139
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_23.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_23.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_23.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 3213,
             "size_bytes": 614973
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_23.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_23.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_23.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 4039,
             "size_bytes": 1052404
@@ -2866,21 +2866,21 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_23.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_23.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_23.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 4558,
             "size_bytes": 1292900
           },
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_23.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_23.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_23.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 1109,
             "size_bytes": 212121
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_23.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_23.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_23.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 2990,
             "size_bytes": 569119
@@ -2896,56 +2896,56 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_9_6_50_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_9_6_50_am_p_24.csv",
             "date_info": null,
             "rows": 3690,
             "size_bytes": 707629
           },
           {
             "filename": "ts_recording_2019_07_3_6_50_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_3_6_50_am_p_24.csv",
             "date_info": null,
             "rows": 3200,
             "size_bytes": 670766
           },
           {
             "filename": "ts_recording_2019_06_22_9_20_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_22_9_20_am_p_24.csv",
             "date_info": "2019_06_22_9_20_am",
             "rows": 1607,
             "size_bytes": 306260
           },
           {
             "filename": "ts_recording_2019_06_26_8_15_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_26_8_15_am_p_24.csv",
             "date_info": "2019_06_26_8_15_am",
             "rows": 3318,
             "size_bytes": 632731
           },
           {
             "filename": "ts_recording_2019_06_28_7_55_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_06_28_7_55_am_p_24.csv",
             "date_info": "2019_06_28_7_55_am",
             "rows": 1677,
             "size_bytes": 319796
           },
           {
             "filename": "ts_recording_2019_07_10_6_50_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_10_6_50_am_p_24.csv",
             "date_info": "2019_07_10_6_50_am",
             "rows": 4790,
             "size_bytes": 911762
           },
           {
             "filename": "ts_recording_2019_07_11_6_50_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_11_6_50_am_p_24.csv",
             "date_info": "2019_07_11_6_50_am",
             "rows": 4354,
             "size_bytes": 1111509
           },
           {
             "filename": "ts_recording_2019_07_12_6_50_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_12_6_50_am_p_24.csv",
             "date_info": "2019_07_12_6_50_am",
             "rows": 5214,
             "size_bytes": 1507177
@@ -2959,7 +2959,7 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_13_6_50_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_13_6_50_am_p_24.csv",
             "date_info": "2019_07_13_6_50_am",
             "rows": 3355,
             "size_bytes": 713037
@@ -2973,21 +2973,21 @@
         "files": [
           {
             "filename": "ts_recording_2019_07_15_6_50_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_15_6_50_am_p_24.csv",
             "date_info": "2019_07_15_6_50_am",
             "rows": 3826,
             "size_bytes": 727790
           },
           {
             "filename": "ts_recording_2019_07_16_7_20_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_16_7_20_am_p_24.csv",
             "date_info": "2019_07_16_7_20_am",
             "rows": 4763,
             "size_bytes": 1302717
           },
           {
             "filename": "ts_recording_2019_07_17_7_20_am_p_24.csv",
-            "path": "/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_24.csv",
+            "path": "/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/ts_recording_2019_07_17_7_20_am_p_24.csv",
             "date_info": "2019_07_17_7_20_am",
             "rows": 3046,
             "size_bytes": 638543

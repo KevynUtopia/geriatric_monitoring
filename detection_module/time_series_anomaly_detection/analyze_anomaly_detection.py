@@ -9,7 +9,7 @@ from system_enging import SystemEngine
 
 # Configuration
 MIN_CSV_LENGTH = 500  # Minimum number of rows required in CSV
-OUTPUT_PATH = "path_to_your_root/results_v6/analyze_soft/analyze_result_output"  # Output directory for results
+OUTPUT_PATH = "path_to_your_root/results/analyze_soft/analyze_result_output"  # Output directory for results
 DEBUG_MODE = False  # Set to True to process only one file for debugging
 
 def convert_timestamp_to_seconds(timestamp):
@@ -218,7 +218,7 @@ def process_directory(directory_path):
 
 def main():
     # Base path containing CSV files to process
-    base_path = "path_to_your_root/results_v6/analyze_soft/TSAD_DATASET"
+    base_path = "path_to_your_root/results/analyze_soft/TSAD_DATASET"
     
     print("Starting Anomaly Detection Analysis")
     print(f"Input directory: {base_path}")

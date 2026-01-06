@@ -804,7 +804,7 @@ if __name__ == "__main__":
     
     # Process all CSV files in a directory
     # directory_path = 'path_to_your_analysis_root/SNH/TSAD_DATASET'
-    directory_path = 'path_to_your_analysis_root/SNH/0_SYSTEM_RESULTS/detection_output/results_v7_alignment_soft/DATASET'
+    directory_path = 'path_to_your_analysis_root/SNH/0_SYSTEM_RESULTS/detection_output/results_alignment_soft/DATASET'
     output_dir = 'path_to_your_analysis_root/SNH/0_SYSTEM_RESULTS/alarm_result_output/alarm_result_output_v13_anm'
     engine = SystemEngine()
     # Set the path to the trained FA models directory

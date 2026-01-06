@@ -84,8 +84,8 @@ def identifier_parse_args():
 
 def alignment_parse_args():
     parser = argparse.ArgumentParser(description='Configurations for analyzor')
-    parser.add_argument("--input_path", type=str, default="path_to_your_root/results_v2", help="path to all cameras from one day")
-    parser.add_argument("--output_path", type=str, default="path_to_your_root/results_v2", help="path to input video")
+    parser.add_argument("--input_path", type=str, default="path_to_your_root/results", help="path to all cameras from one day")
+    parser.add_argument("--output_path", type=str, default="path_to_your_root/results", help="path to input video")
     parser.add_argument("--task", type=str, default="alignment", help="path to input video")
     parser.add_argument("--soft", action='store_true', default=False, help="soft")
     args = parser.parse_args()
@@ -94,7 +94,7 @@ def alignment_parse_args():
 
 def ts_parse_args():
     parser = argparse.ArgumentParser(description='Configurations for time-series modelling')
-    parser.add_argument("--input_path", type=str, default="path_to_your_root/results_v2", help="path to all cameras from one day")
-    parser.add_argument("--output_path", type=str, default="path_to_your_root/results_v2", help="path to input video")
+    parser.add_argument("--input_path", type=str, default="path_to_your_root/results", help="path to all cameras from one day")
+    parser.add_argument("--output_path", type=str, default="path_to_your_root/results", help="path to input video")
     args = parser.parse_args()
     return args

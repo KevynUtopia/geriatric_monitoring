@@ -65,7 +65,7 @@ if __name__ == '__main__':
             input_camera = os.path.join(input_day, camera)
 
             # DEBUG
-            # input_camera = 'path_to_your_root/results_v2/recording_2019_06_22_9_20_am/cam_10'
+            # input_camera = 'path_to_your_root/results/recording_2019_06_22_9_20_am/cam_10'
             all_files = os.path.join(input_camera, 'list.json')
 
             # read the json file

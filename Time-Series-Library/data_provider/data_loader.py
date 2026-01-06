@@ -803,7 +803,7 @@ class Dataset_Elderly(Dataset):
 
     def __read_data__(self):
         print("Reading data...")
-        df_path = '/nfs/dataset/pathology/elderlycare/results_v7/data_splits.json'
+        df_path = '/nfs/dataset/pathology/elderlycare/results/data_splits.json'
         with open(df_path, 'r') as f:
             data_splits = json.load(f)
         
@@ -827,8 +827,8 @@ class Dataset_Elderly(Dataset):
                     
                     # Replace path prefix as requested
                     file_path = file_info['path'].replace(
-                        '/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/',
-                        '/nfs/dataset/pathology/elderlycare/results_v7/cleaned_data/'
+                        '/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/',
+                        '/nfs/dataset/pathology/elderlycare/results/cleaned_data/'
                     )
                     file_path.replace('cleaned_data', 'DATASET')
                     
@@ -1030,7 +1030,7 @@ class Dataset_Elderly_AD(Dataset):
 
 
     def __read_data__(self):
-        df_path = '/nfs/dataset/pathology/elderlycare/results_v7/data_splits.json'
+        df_path = '/nfs/dataset/pathology/elderlycare/results/data_splits.json'
         with open(df_path, 'r') as f:
             data_splits = json.load(f)
 
@@ -1054,8 +1054,8 @@ class Dataset_Elderly_AD(Dataset):
 
                     # Replace path prefix as requested
                     file_path = file_info['path'].replace(
-                        '/Users/kevynzhang/Downloads/results_v7_alignment_soft/DATASET/',
-                        '/nfs/dataset/pathology/elderlycare/results_v7/cleaned_data/'
+                        '/Users/kevynzhang/Downloads/results_alignment_soft/DATASET/',
+                        '/nfs/dataset/pathology/elderlycare/results/cleaned_data/'
                     )
 
                     # Check if file exists

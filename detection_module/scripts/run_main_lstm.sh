@@ -12,8 +12,8 @@ cd ~/elderlycare
 
 # Set paths
 DATASET_ROOT="/your_root_path"
-DATA_DIR="$DATASET_ROOT/results_v7_alignment_soft/DATASET"
-OUTPUT_BASE="$DATASET_ROOT/results_v7_alignment_soft/model_outputs"
+DATA_DIR="$DATASET_ROOT/results_alignment_soft/DATASET"
+OUTPUT_BASE="$DATASET_ROOT/results_alignment_soft/model_outputs"
 
 # Create output directory if it doesn't exist
 mkdir -p $OUTPUT_BASE

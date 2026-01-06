@@ -232,8 +232,8 @@ if __name__ == "__main__":
     learning_rate = 0.001
     
     # Data paths
-    data_dir = "path_to_your_root/results_v7_alignment_soft/DATASET"
-    output_base = "path_to_your_root/results_v7_alignment_soft/model_outputs"
+    data_dir = "path_to_your_root/results_alignment_soft/DATASET"
+    output_base = "path_to_your_root/results_alignment_soft/model_outputs"
     
     # Create output directory with timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

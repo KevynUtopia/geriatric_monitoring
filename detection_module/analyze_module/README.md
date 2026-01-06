@@ -136,7 +136,7 @@ output_path/
 ```bash
 # Process everything from scratch
 ./scripts/run_analyze_and_align.sh \
-    -i path_to_your_root/results_v2 \
+    -i path_to_your_root/results \
     -o path_to_your_root/results_combined \
     --soft \
     -t alignment_soft_v6

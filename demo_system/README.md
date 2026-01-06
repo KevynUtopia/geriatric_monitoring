@@ -37,13 +37,6 @@ The demo system provides an interactive interface to experience the geriatric mo
    
    **[Download Models](https://drive.google.com/drive/folders/1TuGWuag2kme74HmJ-u5t9l6wWkFJ45sc?usp=sharing)**
    
-   Download all model files and place them in the `backend_weights/` directory:
-   - `yolo_last_2.pt`
-   - `yolo_last_6.pt`
-   - `yolo_last_10.pt`
-   - `yolo11m-pose.pt`
-   - `yolo11n-pose.pt`
-   - `yolo11x-pose.pt`
 
 ## Running the Demo
 

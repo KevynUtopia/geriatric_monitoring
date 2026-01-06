@@ -14,8 +14,8 @@ batch_size=16
 #python -u run.py \
 #  --task_name anomaly_detection \
 #  --is_training 1 \
-#  --root_path /nfs/dataset/pathology/elderlycare/results_v7/cleaned_data \
-#  --data_path /nfs/dataset/pathology/elderlycare/results_v7/cleaned_data \
+#  --root_path /nfs/dataset/pathology/elderlycare/results/cleaned_data \
+#  --data_path /nfs/dataset/pathology/elderlycare/results/cleaned_data \
 #  --model_id m4_Monthly \
 #  --model TimesNet \
 #  --data Elderly_AD \
@@ -35,7 +35,7 @@ batch_size=16
 #python -u run.py \
 #  --task_name 'anomaly_detection' \
 #  --is_training 1 \
-#  --root_path /nfs/dataset/pathology/elderlycare/results_v7/cleaned_data \
+#  --root_path /nfs/dataset/pathology/elderlycare/results/cleaned_data \
 #  --seasonal_patterns 'Minutely' \
 #  --model_id m4_Monthly \
 #  --model $model_name \
@@ -64,12 +64,12 @@ batch_size=16
 #  --down_sampling_method avg \
 #  --down_sampling_window $down_sampling_window \
 #  --loss 'SMAPE' \
-#  --data_path /nfs/dataset/pathology/elderlycare/results_v7/cleaned_data \
+#  --data_path /nfs/dataset/pathology/elderlycare/results/cleaned_data \
 
 #python -u run.py \
 #  --task_name imputation \
 #  --is_training 1 \
-#  --root_path /nfs/dataset/pathology/elderlycare/results_v7/cleaned_data \
+#  --root_path /nfs/dataset/pathology/elderlycare/results/cleaned_data \
 #  --seasonal_patterns 'Minutely' \
 #  --model_id m4_Monthly \
 #  --model $model_name \
@@ -98,14 +98,14 @@ batch_size=16
 #  --down_sampling_method avg \
 #  --down_sampling_window $down_sampling_window \
 #  --loss 'SMAPE' \
-#  --data_path /nfs/dataset/pathology/elderlycare/results_v7/cleaned_data
+#  --data_path /nfs/dataset/pathology/elderlycare/results/cleaned_data
 #  --data_path recording_2019_06_22_9_20_am/p_11.csv
 
 
 python -u run.py \
   --task_name short_term_forecast \
   --is_training 0 \
-  --root_path /nfs/dataset/pathology/elderlycare/results_v7/cleaned_data \
+  --root_path /nfs/dataset/pathology/elderlycare/results/cleaned_data \
   --seasonal_patterns 'Minutely' \
   --model_id m4_Monthly \
   --model $model_name \

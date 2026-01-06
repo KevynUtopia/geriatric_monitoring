@@ -4,7 +4,7 @@
 # Example: export DATASET_ROOT="/path/to/your/dataset"
 
 DATASET_ROOT="/your_root_path"
-RUNNING_DIR="results_v6"
+RUNNING_DIR="results"
 RESULT="$DATASET_ROOT/${RUNNING_DIR}_analyze_soft/"
 OUT="$DATASET_ROOT/${RUNNING_DIR}_alignment_soft/"
 MMACTION2="/home/wzhangbu/elderlycare/mmaction2/"

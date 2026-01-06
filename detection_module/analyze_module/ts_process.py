@@ -90,7 +90,7 @@ def process_all_folders(root_path, output_path):
 
 def main():
     # Get the current directory
-    current_dir = "path_to_your_root/results_v7_analyze_soft"
+    current_dir = "path_to_your_root/results_analyze_soft"
     
     # Set output directory
     output_dir = os.path.join(current_dir, "OUTPUT")

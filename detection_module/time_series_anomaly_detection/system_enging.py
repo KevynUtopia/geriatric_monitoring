@@ -168,7 +168,7 @@ class SystemEngine:
                                 hidden_dim=hidden_dim, pred_len=pred_len, num_layers=num_layers, batch_size=batch_size, device=device).to(device)
 
         # load weights according to the path
-        path = ('path_to_your_root/results_v6/analyze_soft/model_outputs/'
+        path = ('path_to_your_root/results/analyze_soft/model_outputs/'
                 'lstm_run_20250618_021736/checkpoint_step_19610000.pth')
         weights = torch.load(path)['model_state_dict']
 
