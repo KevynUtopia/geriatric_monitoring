@@ -6,16 +6,6 @@
 
 This repository implements an edge-AI framework that enables proactive wellness monitoring for the rapidly expanding geriatric population. The system addresses the critical challenge of tracking functional health continuously and unobtrusively while preserving privacy and independence for older adults.
 
-**Core Innovation**: The framework quantifies **temporal biomarker stability**, a novel digital phenotype derived from vision-based kinematic analysis, to detect non-accidental health anomalies. By performing real-time, on-device processing through a custom hardware-software co-designed accelerator, the system eliminates cloud transmission requirements and ensures strict biometric privacy.
-
-**Key Capabilities**:
-- **Vision-based biomarker extraction**: Processes video streams to extract behavioral biomarkers (activities, postures, social interactions) through kinematic analysis
-- **Temporal stability analysis**: Quantifies biomarker stability patterns over time to identify subtle functional declines
-- **Anomaly detection**: Achieves AUROC of 0.9234 in identifying clinically significant behavioral deviations that precede acute events
-- **Privacy-preserving architecture**: All processing performed on-device, eliminating the need for cloud transmission of sensitive biometric data
-
-**Validation**: The system has been validated using a newly curated longitudinal dataset comprising over 500 hours of naturalistic activity from nursing home residents, demonstrating its effectiveness in capturing subtle motion dynamics and transforming them into actionable clinical insights for aging-in-place.
-
 ## 🏗️ System Architecture
 
 The system is organized into main processing modules and training modules:
