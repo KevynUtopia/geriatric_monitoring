@@ -1,54 +1,101 @@
-# AI Detection Template
+# Demo System
 
-A template project inspired by Good-GYM with similar UI but different backend computation capabilities.
+This directory contains a **standalone demonstration** of the Digital Biomarker Stability Monitoring system for privacy-preserving geriatric care. This demo showcases the core functionality of the entire repository, including video processing, biomarker extraction, and real-time analysis capabilities.
 
-## Features
+## Overview
 
-- **Real-time Detection** - Multiple detection models working in parallel
-- **Modern UI** - Clean PyQt5 interface similar to Good-GYM
-- **Multi-Model Support** - Skeleton code for various detection models
-- **Video Processing** - Real-time video analysis and display
-- **Statistics Tracking** - Progress monitoring and data visualization
-- **Extensible Architecture** - Easy to add new detection models
+The demo system provides an interactive interface to experience the geriatric monitoring system without requiring the full repository setup. It demonstrates:
 
-## Project Structure
+- **Real-time video processing** - Live camera feed or video file analysis
+- **Human detection and tracking** - YOLO-based pose detection and person re-identification
+- **Action recognition** - Spatial-temporal action detection using MMAction2
+- **Biomarker extraction** - Visual biomarker sequence generation
+- **Interactive visualization** - Real-time display of detection results and statistics
 
-```
-├── app/                    # Main application modules
-├── core/                   # Core detection and processing logic
-├── ui/                     # User interface components
-├── models/                 # Detection model implementations
-├── data/                   # Data storage and configuration
-├── assets/                 # UI assets and resources
-└── requirements.txt        # Python dependencies
-```
+## Standalone Usage
 
-## Backend Models (Skeleton)
+**You can download and run this `demo_system` folder independently** without needing the entire repository. This makes it easy to quickly explore the system's capabilities.
 
-The template includes skeleton code for multiple detection models:
+## Prerequisites
 
-1. **Pose Detection** - Human pose estimation
-2. **Object Detection** - General object recognition
-3. **Action Recognition** - Human activity classification
-4. **Custom Models** - Placeholder for your specific models
+- Python 3.8+
+- CUDA-capable GPU (recommended for optimal performance)
+- Webcam or video file for input
 
-## Getting Started
+## Installation
 
-1. Install dependencies:
+1. **Clone or download this `demo_system` folder**
+
+2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-2. Run the application:
-   ```bash
-   python run.py
-   ```
+3. **Download model weights:**
+   
+   The required model weights are available in the following Google Drive folder:
+   
+   **[Download Models](https://drive.google.com/drive/folders/1TuGWuag2kme74HmJ-u5t9l6wWkFJ45sc?usp=sharing)**
+   
+   Download all model files and place them in the `backend_weights/` directory:
+   - `yolo_last_2.pt`
+   - `yolo_last_6.pt`
+   - `yolo_last_10.pt`
+   - `yolo11m-pose.pt`
+   - `yolo11n-pose.pt`
+   - `yolo11x-pose.pt`
 
-## Development
+## Running the Demo
 
-This template provides a solid foundation for building AI detection applications. The backend computation can be customized by implementing the skeleton model classes in the `models/` directory.
+### Option 1: Using the run script (recommended)
+```bash
+bash run_app.sh
+```
+
+### Option 2: Direct Python execution
+```bash
+python run.py
+```
+
+## Features
+
+- **Multi-model Detection**: Supports pose detection, object detection, and action recognition
+- **Real-time Processing**: Live video analysis with low latency
+- **Modern UI**: Clean PyQt5 interface for intuitive interaction
+- **Statistics Tracking**: Real-time progress monitoring and data visualization
+- **Video Playback**: Support for both live camera feed and video file input
+
+## Project Structure
+
+```
+demo_system/
+├── app/                    # Main application modules
+│   ├── main_window.py      # Main UI window
+│   ├── detection_manager.py # Detection coordination
+│   └── video_processor.py   # Video processing logic
+├── core/                   # Core detection and processing logic
+├── ui/                     # User interface components
+├── models/                 # Detection model implementations
+│   ├── pose_detector.py    # Pose detection model
+│   └── action_recognizer.py # Action recognition model
+├── backend_weights/        # Model weights (download from Google Drive)
+├── mmaction2/             # MMAction2 framework for action recognition
+├── data/                   # Data storage and configuration
+├── assets/                 # UI assets and resources
+├── run.py                  # Main entry point
+└── requirements.txt        # Python dependencies
+```
+
+## Notes
+
+- The demo uses pre-trained models that are optimized for geriatric monitoring scenarios
+- For best performance, ensure GPU acceleration is properly configured
+- The system processes video in real-time, so performance may vary based on hardware capabilities
+
+## Related Documentation
+
+For more information about the full system architecture and other modules, please refer to the main [README](../README.md).
 
 ## License
 
-MIT License - Feel free to use and modify for your projects.
-
+See the main repository license for details.
