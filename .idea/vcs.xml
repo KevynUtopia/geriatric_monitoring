@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/EasyTSAD" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Time-Series-Library" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/deep-person-reid" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/detection_module/dlib" vcs="Git" />
