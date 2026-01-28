@@ -10,7 +10,7 @@ from .report import generate_detailed_report
 from .results import write_evaluation_results, print_final_summary_report
 
 class FilteredHumanSystemEvaluator:
-    def __init__(self, system_output_dir, human_evaluation_filtered_dir, output_dir, data_splits_path, valid_time_interval_path, included_ids=None, excluded_ids=None, date_filter=None):
+    def __init__(self, system_output_dir, human_evaluation_filtered_dir, output_dir, data_splits_path, valid_time_interval_path, date_filter=None):
         self.system_output_dir = system_output_dir
         self.human_evaluation_filtered_dir = human_evaluation_filtered_dir
         self.output_dir = output_dir
@@ -29,10 +29,6 @@ class FilteredHumanSystemEvaluator:
         self.identity_results = {}
         self.summary_results = {}
         
-        # Set identity filters
-        self.included_ids = set(included_ids) if included_ids else set()
-        self.excluded_ids = set(excluded_ids) if excluded_ids else set()
-        
         # Set date filter
         self.date_filter = date_filter  # e.g., "06_26" for June 26th
 
@@ -41,23 +37,6 @@ class FilteredHumanSystemEvaluator:
         # Set random seed for reproducible bootstrapping
         np.random.seed(42)
 
-    def set_identity_filters(self, included_ids=None, excluded_ids=None):
-        """
-        Set identity filters for evaluation.
-        
-        Args:
-            included_ids: Set of identity IDs to include (if not empty, only these will be evaluated)
-            excluded_ids: Set of identity IDs to exclude from evaluation
-        """
-        if included_ids is not None:
-            self.included_ids = set(included_ids)
-        if excluded_ids is not None:
-            self.excluded_ids = set(excluded_ids)
-        print(f"Identity filters updated:")
-        if self.included_ids:
-            print(f"  🔍 INCLUDED: {sorted(self.included_ids)}")
-        if self.excluded_ids:
-            print(f"  🚫 EXCLUDED: {sorted(self.excluded_ids)}")
 
     def set_date_filter(self, date_filter=None):
         """
@@ -946,56 +925,16 @@ class FilteredHumanSystemEvaluator:
 
     def evaluate_all_identities(self):
         print("Calculating evaluation metrics using 5-second snippet-based approach...")
-        print("  - Each 5-second interval is treated as one evaluation unit")
-        print("  - Snippet is positive if ANY second within it has a positive label (>0)")
-        print("  - System prediction for snippet uses maximum prediction within the interval")
-        print("  - Using FILTERED data only (no additional time period filtering)")
         self.identity_results = {}
         self.summary_results = {}
         self.valid_snippet_counts = {}  # Track valid snippet count per split
         self.identity_snippet_data = {}  # Store raw snippet data for bootstrapping
         
-        # --- Identity filtering logic ---
-        # included_ids = set()  # Fill this set with identities to include, e.g., {'p_1', 'p_2'}
-        # included_ids = {'p_8', 'p_20', 'p_23'}  # Uncomment and modify as needed
-        
-        # excluded_ids = set() # {'p_13', 'p_15', 'p_22', 'p_14', 'p_9'}
-        # excluded_ids = {'p_13', 'p_15', 'p_22', 'p_14', 'p_9'}  # Uncomment and modify as needed
-        
-        # Log filtering configuration
-        if self.included_ids:
-            print(f"  🔍 INCLUDED identities filter: {sorted(self.included_ids)}")
-        if self.excluded_ids:
-            print(f"  🚫 EXCLUDED identities filter: {sorted(self.excluded_ids)}")
-        if self.date_filter:
-            print(f"  📅 DATE filter: {self.date_filter} (only files from 2019_{self.date_filter})")
-        if not self.included_ids and not self.excluded_ids and not self.date_filter:
-            print("  📊 No filtering applied - evaluating all available identities and dates")
-        elif not self.included_ids and not self.excluded_ids:
-            print("  📊 No identity filtering applied - evaluating all available identities")
-        
         for split in ['train', 'val', 'test']:
-            split_data = self.matched_pairs_by_split[split].copy()  # Create a copy to avoid modifying original
-            
-            # Apply excluded_ids filter
-            for ex_id in self.excluded_ids:
-                if ex_id in split_data:
-                    del split_data[ex_id]
-                    print(f"    🚫 Excluded {ex_id} from {split} split")
-            
-            # Apply included_ids filter (if not empty)
-            if self.included_ids:
-                original_count = len(split_data)
-                split_data = {k: v for k, v in split_data.items() if k in self.included_ids}
-                filtered_count = len(split_data)
-                excluded_count = original_count - filtered_count
-                if excluded_count > 0:
-                    print(f"    🔍 Filtered {split} split: {original_count} -> {filtered_count} identities (excluded {excluded_count})")
-                else:
-                    print(f"    ✅ All {original_count} identities in {split} split are included")
+            split_data = self.matched_pairs_by_split[split].copy()
             
             if not split_data:
-                print(f"  {split}: No data to evaluate after filtering")
+                print(f"  {split}: No data to evaluate")
                 self.valid_snippet_counts[split] = 0
                 continue
                 
@@ -1016,30 +955,33 @@ class FilteredHumanSystemEvaluator:
                     metrics = calculate_binary_metrics(predictions, labels)
                     identity_metrics[identity] = metrics
                     valid_snippet_count += snippet_count
-                else:
-                    print(f"    Warning: Skipping {identity} in {split} - no valid metrics")
 
             self.identity_results[split] = identity_metrics
             self.identity_snippet_data[split] = identity_snippet_data
             self.valid_snippet_counts[split] = valid_snippet_count
             
             if identity_metrics:
+                # Auto-calculate topN based on actual number of identities
+                num_identities = len(identity_metrics)
+                if num_identities >= 7:
+                    N_list = [3, 5, 7]
+                elif num_identities >= 5:
+                    N_list = [3, 5]
+                elif num_identities >= 3:
+                    N_list = [3]
+                else:
+                    N_list = [num_identities] if num_identities > 0 else []
+                
                 micro_metrics = self.calculate_micro_metrics(identity_metrics, identity_snippet_data, split_name=split, output_dir=self.output_dir)
                 macro_metrics = self.calculate_macro_metrics(identity_metrics)
-                topN_metrics = self.calculate_topN_metrics(identity_metrics, N_list=[3, 5, 7])
+                topN_metrics = self.calculate_topN_metrics(identity_metrics, N_list=N_list)
                 self.summary_results[split] = {
                     'micro_metrics': micro_metrics,
                     'macro_metrics': macro_metrics,
                     'topN_metrics': topN_metrics,
                     'num_identities': len(identity_metrics)
                 }
-                print(f"  {split} summary:")
-                print(f"    Micro AUC: {micro_metrics['auc']:.4f}")
-                print(f"    Macro AUC: {macro_metrics['auc']:.4f}")
-                print(f"    Micro Best F1: {micro_metrics['best_f1']:.4f}")
-                print(f"    Macro Best F1: {macro_metrics['best_f1']:.4f}")
-                print(f"    Total samples: {micro_metrics['total_samples']}")
-                print(f"    Total positives: {micro_metrics['total_positives']}")
+                print(f"  {split}: AUC={micro_metrics['auc']:.4f}, F1={micro_metrics['best_f1']:.4f}, samples={micro_metrics['total_samples']}")
             else:
                 print(f"  {split}: No valid data")
 

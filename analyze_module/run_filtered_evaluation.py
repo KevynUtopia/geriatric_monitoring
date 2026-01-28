@@ -7,8 +7,6 @@ def main():
     data_splits_path = "path_to_your_analysis_root/SNH/data_splits.json"
     valid_time_interval_path = "video_time_periods.csv"
 
-    included_ids = set()
-    excluded_ids = set()
     date_filter = None
     
     evaluator = FilteredHumanSystemEvaluator( 
@@ -17,8 +15,6 @@ def main():
         output_dir=output_dir,
         data_splits_path=data_splits_path,
         valid_time_interval_path=valid_time_interval_path,
-        included_ids=included_ids,
-        excluded_ids=excluded_ids,
         date_filter=date_filter
     )
     
