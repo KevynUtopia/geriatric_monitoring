@@ -46,7 +46,6 @@ def write_processed_file(archive_file, file_name, status="completed", error=None
 def process_video(args, input_file, out_filename, archive_file, file):
     input_file = 'path_to_your_root/July/recording_2019_06_22_9_20_am/cam_10/cam_10-12600-12720.mov'
     train_one_iteration(args, input_file, out_filename)
-    exit(0)
     try:
         write_processed_file(archive_file, file, status="processing")
         train_one_iteration(args, input_file, out_filename)
@@ -61,9 +60,9 @@ def main(args):
     for day in sorted(os.listdir(args.input_path)):
         input_day = os.path.join(args.input_path, day)
         # input_day = 'path_to_your_root/July/recording_2019_06_27_10_30_am'
-        if '07_1' in input_day:
-            print(f"Skipping {input_day}")
-            continue
+        # if '07_1' in input_day:
+        #     print(f"Skipping {input_day}")
+        #     continue
         for camera in sorted(os.listdir(input_day)):
             input_camera = os.path.join(input_day, camera)
 
