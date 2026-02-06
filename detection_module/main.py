@@ -44,7 +44,7 @@ def write_processed_file(archive_file, file_name, status="completed", error=None
 
 
 def process_video(args, input_file, out_filename, archive_file, file):
-    input_file = 'path_to_your_root/July/recording_2019_06_22_9_20_am/cam_10/cam_10-12600-12720.mov'
+
     train_one_iteration(args, input_file, out_filename)
     try:
         write_processed_file(archive_file, file, status="processing")
