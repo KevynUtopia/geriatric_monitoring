@@ -1,4 +1,4 @@
-detection_module/people_profile
+detection_module/people_profile/folder
 .DS_Store
 analyze_module/evaluate/__pycache__
 analyze_module/time_series_model/reduced_fa1
