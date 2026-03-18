@@ -100,9 +100,6 @@ def main(args):
                 os.makedirs(f"{args.out_path}/{os.path.dirname(out_filename)}", exist_ok=True)
                 process_video(args, input_file, out_filename, archive_file, file)
 
-                # exit(0)
-        # exit(0)
-
 
 if __name__ == '__main__':
     args = parse_args()
