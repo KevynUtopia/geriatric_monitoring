@@ -1,151 +1,132 @@
 """
-Action recognition model - copied from demo_system.models.action_recognizer
-and namespaced under demo_system_backend.models.
+Action recognition model (per-identity) using local mmlab_local extraction.
+
+recognize() runs the action model on a clip window and returns raw
+per-identity scores. Biomarker analysis (PCA aggregation, anomaly detection)
+is handled by pipeline.biomarker(), NOT here.
 """
 
 from typing import Any, Dict, List, Tuple
-import numpy as np
-from mmaction.registry import MODELS
-import mmcv
-import torch
-from mmaction.structures import ActionDataSample
-from mmengine.structures import InstanceData
-import mmengine
 
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
-from sklearn.decomposition import FactorAnalysis, PCA
+import cv2
+import numpy as np
+import torch
+from sklearn.decomposition import PCA
+
+from mmlab_local.image_utils import imnormalize_, imresize, rescale_size
+from mmlab_local.label_utils import load_ava_label_map, top_k_actions
+from mmlab_local.model_builder import build_action_model
+from mmlab_local.model_config import DATA_PREPROCESSOR_CFG
+from mmlab_local.structures import ActionDataSample, InstanceData
 
 
 class ActionRecognizer:
-    """Action recognition module, organized by identity IDs."""
+    """Spatio-temporal action recognition, organized by identity."""
 
-    def __init__(self, device: str = "cpu", num_actions: int = 10):
+    def __init__(self, device: str = "cpu", num_actions: int = 10,
+                 checkpoint: str = None):
         self.device = device
         self.num_actions = num_actions
-        self.model = None
+        self.checkpoint = checkpoint
         self._load_model()
 
-        self.selected_scores: List[Any] = []
-        self.factor_analysis = FactorAnalysis(n_components=3, rotation="varimax")
-        self.pca = PCA()
-
-        self.unique_ids: List[int] = []
+        self.label_map = load_ava_label_map()
         self.score_dict: Dict[int, List[torch.Tensor]] = {}
-        self.pca_score: Dict[int, float] = {}
-
         self.idx_pca: Dict[int, PCA] = {}
-        self.idx_var: Dict[int, List[float]] = {}
 
     def _load_model(self) -> None:
-        """Load actual action model via MMAction2."""
-        self.model = "placeholder"
+        self.action_recognizer = build_action_model(
+            checkpoint=self.checkpoint, device=self.device)
 
-        # NOTE: paths are kept as in original; adjust if needed for your environment.
-        model_config = (
-            "/home/wzhangbu/Desktop/AoE_Demo/snh_demo/mmaction2/configs/detection/"
-            "videomae/vit-large-p16_videomae-k400-pre_8xb8-16x4x1-20e-adamw_ava-kinetics-rgb.py"
-        )
-        action_model = (
-            "https://download.openmmlab.com/mmaction/detection/ava/"
-            "slowonly_omnisource_pretrained_r101_8x8x1_20e_ava_rgb/"
-            "slowonly_omnisource_pretrained_r101_8x8x1_20e_ava_rgb_20201217-16378594.pth"
-        )
-        self.config = mmengine.Config.fromfile(model_config)
-        self.action_recognizer = MODELS.build(self.config.model).to("cuda:0")
-
-    def preprocess(self, clip: List[np.ndarray]) -> np.ndarray:
-        """Preprocess frames: stack and resize to 224x224."""
-        if len(clip) == 0:
-            return np.zeros((0, 224, 224, 3), dtype=np.float32)
-
-        import cv2
-
-        frames: List[np.ndarray] = []
-        for frame in clip:
-            if frame.dtype != np.float32:
-                f = frame.astype(np.float32)
-            else:
-                f = frame
-            f = cv2.resize(f, (224, 224))
-            frames.append(f)
-        frames_arr = np.stack(frames, axis=0)
-        return frames_arr
-
-    def infer_logits(self, frames: np.ndarray, boxes: np.ndarray) -> np.ndarray:
-        """Simple deterministic logits placeholder (not used by identity pipeline)."""
-        if frames.size == 0:
-            return np.zeros((self.num_actions,), dtype=np.float32)
-
-        mean_rgb = frames.mean(axis=(0, 1, 2))
-        h, w = frames.shape[1], frames.shape[2]
-        areas = (np.maximum(0.0, boxes[:, 2] - boxes[:, 0]) * np.maximum(0.0, boxes[:, 3] - boxes[:, 1]))
-        area_feat = np.mean(areas) / (max(h * w, 1))
-
-        feat = np.concatenate([mean_rgb / 255.0, np.array([area_feat], dtype=np.float32)])
-        logits = np.zeros((self.num_actions,), dtype=np.float32)
-        for i in range(self.num_actions):
-            logits[i] = (feat * (i + 1)).sum()
-        return logits
+    # ------------------------------------------------------------------
+    # Public API — called by pipeline.action()
+    # ------------------------------------------------------------------
 
     def recognize(
-        self, clip: List[np.ndarray], boxes: List[np.ndarray], ids: List[np.ndarray]
+        self,
+        clip: List[np.ndarray],
+        boxes: List[np.ndarray],
+        ids: List[np.ndarray],
     ) -> Dict[str, Any]:
-        """Run action recognition over a clip and associated boxes, organized by identity."""
+        """Run action recognition on a clip, grouped by identity.
+
+        Input:
+            clip  -- list of T frames (np.float32, BGR)
+            boxes -- list of T arrays, each (N, 4) xyxy
+            ids   -- list of T arrays, each (N,) int track-ids
+
+        Output:
+            dict with:
+                'identity_results': {id: {'scores', 'pca_scalar', ...}}
+                'total_frames': int
+        """
         unique_ids = set()
         for frame_ids in ids:
             if len(frame_ids) > 0:
-                unique_ids.update(frame_ids)
-        unique_ids = list(unique_ids)
+                unique_ids.update(frame_ids.tolist())
+        unique_ids = sorted(unique_ids)
 
         if not unique_ids:
             return {"identity_results": {}, "total_frames": len(clip)}
 
-        self.unique_ids = unique_ids
         identity_results: Dict[int, Dict[str, Any]] = {}
 
-        print("unique_ids", unique_ids)
         for identity_id in unique_ids:
             identity_clip, identity_boxes = self._extract_identity_data(
-                clip, boxes, ids, identity_id
-            )
-
+                clip, boxes, ids, identity_id)
             if len(identity_clip) == 0:
                 continue
 
-            frames_arr = self.preprocess(identity_clip)
-
-            scores = self.action_recognition(frames_arr, identity_boxes, identity_id)
-            scores = 0 if scores is None else scores
-            if identity_id not in self.idx_var:
-                self.idx_var[identity_id] = [scores]
-            else:
-                self.idx_var[identity_id].append(scores)
+            frames_arr = self._preprocess_clip(identity_clip)
+            fwd = self._action_forward(
+                frames_arr, identity_boxes, identity_id)
 
             identity_results[identity_id] = {
-                "scores": scores,
+                "scores": fwd["pca_scalar"] if fwd["pca_scalar"] is not None else 0,
                 "num_frames": int(frames_arr.shape[0]),
                 "boxes": identity_boxes,
-                "pca_scalar": self.pca_score.get(identity_id),
+                "pca_scalar": fwd["pca_scalar"],
+                "raw_scores": fwd["raw_scores"],
+                "top_actions": fwd["top_actions"],
             }
 
-        anomaly_detected = False
-        if unique_ids is not None:
-            print("_______________Lastest 5 Timestamp________________________")
-            for id_ in unique_ids:
-                tmp = self.idx_var[id_][-5:]
-                tmp = (tmp - np.min(tmp)) / (np.max(tmp) - np.min(tmp) + 1e-9)
-                if np.var(tmp) > 0.145:
-                    print(f"⚠️ Identity {id_} anomaly detected: {np.var(tmp)}")
-                    anomaly_detected = True
-                else:
-                    print(f"✔ Identity {id_} wellness scores: {np.var(tmp)}")
-            print("_______________________________________")
-        torch.cuda.empty_cache()
         return {
             "identity_results": identity_results,
             "total_frames": len(clip),
-            "anomaly_detected": anomaly_detected,
         }
+
+    # ------------------------------------------------------------------
+    # Internal helpers
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _sample_frames(clip: List[np.ndarray],
+                       num_frames: int = 16,
+                       frame_interval: int = 4) -> List[np.ndarray]:
+        """Uniformly sample `num_frames` from `clip` at `frame_interval`.
+
+        Mirrors SampleAVAFrames(clip_len=16, frame_interval=4).
+        """
+        total = len(clip)
+        needed = num_frames * frame_interval
+        if total >= needed:
+            start = (total - needed) // 2
+            indices = list(range(start, start + needed, frame_interval))
+        elif total >= num_frames:
+            indices = np.linspace(0, total - 1, num_frames, dtype=int).tolist()
+        else:
+            indices = list(range(total))
+            while len(indices) < num_frames:
+                indices.append(indices[-1])
+        return [clip[i] for i in indices]
+
+    def _preprocess_clip(self, clip: List[np.ndarray]) -> np.ndarray:
+        """Sample 16 frames and convert to float32 (no spatial resize here)."""
+        if len(clip) == 0:
+            return np.zeros((0, 224, 224, 3), dtype=np.float32)
+        sampled = self._sample_frames(clip, num_frames=16, frame_interval=4)
+        frames = [f.astype(np.float32) for f in sampled]
+        return np.stack(frames, axis=0)
 
     def _extract_identity_data(
         self,
@@ -154,36 +135,40 @@ class ActionRecognizer:
         ids: List[np.ndarray],
         target_id: int,
     ) -> Tuple[List[np.ndarray], np.ndarray]:
-        """Extract frames and boxes for a specific identity."""
         identity_clip: List[np.ndarray] = []
         identity_boxes: List[np.ndarray] = []
 
-        for frame_idx, (frame, frame_boxes, frame_ids) in enumerate(zip(clip, boxes, ids)):
-            identity_mask = frame_ids == target_id
-            if np.any(identity_mask):
+        for frame, frame_boxes, frame_ids in zip(clip, boxes, ids):
+            mask = frame_ids == target_id
+            if np.any(mask):
                 identity_clip.append(frame)
-                identity_boxes_in_frame = frame_boxes[identity_mask]
-                identity_boxes.append(identity_boxes_in_frame)
+                identity_boxes.append(frame_boxes[mask])
 
         if identity_boxes:
-            identity_boxes_arr = (
-                np.concatenate(identity_boxes, axis=0)
-                if len(identity_boxes) > 0
-                else np.zeros((0, 4))
-            )
+            boxes_arr = np.concatenate(identity_boxes, axis=0)
         else:
-            identity_boxes_arr = np.zeros((0, 4))
+            boxes_arr = np.zeros((0, 4))
 
-        return identity_clip, identity_boxes_arr
+        return identity_clip, boxes_arr
 
-    def action_recognition(self, clip, human_detections, identity_id):
-        """Action recognition on a short clip for one identity."""
+    def _action_forward(
+        self,
+        clip: np.ndarray,
+        human_detections: np.ndarray,
+        identity_id: int,
+    ) -> Dict[str, Any]:
+        """Run forward pass for one identity's clip.
+
+        Returns dict with:
+            raw_scores  — 1-D numpy array (81,) of sigmoid action scores
+            top_actions — list of (action_name, score) tuples
+            pca_scalar  — float when >= 5 score vectors accumulated, else None
+        """
         human_detections = np.expand_dims(human_detections, axis=1)
 
         _, w, h, _ = clip.shape
-        short_side = 512
-        new_w, new_h = mmcv.rescale_size((w, h), (short_side, np.Inf))
-        frames = [mmcv.imresize(img, (new_w, new_h)) for img in clip]
+        new_w, new_h = rescale_size((w, h), (256, np.Inf))
+        frames = [imresize(img, (new_w, new_h)) for img in clip]
         w_ratio, h_ratio = new_w / w, new_h / h
 
         for i in range(len(human_detections)):
@@ -193,44 +178,51 @@ class ActionRecognizer:
             human_detections[i] = det[:, :4]
 
         img_norm_cfg = dict(
-            mean=np.array(self.config.model.data_preprocessor.mean),
-            std=np.array(self.config.model.data_preprocessor.std),
+            mean=np.array(DATA_PREPROCESSOR_CFG['mean']),
+            std=np.array(DATA_PREPROCESSOR_CFG['std']),
             to_rgb=False,
         )
 
-        assert len(human_detections) == len(clip), "The number of human detections and frames should match."
         center_ind = len(human_detections) // 2
         proposal = torch.from_numpy(human_detections[center_ind])
 
         imgs = [f.astype(np.float32) for f in frames]
-        _ = [mmcv.imnormalize_(img, **img_norm_cfg) for img in imgs]
+        _ = [imnormalize_(img, **img_norm_cfg) for img in imgs]
         input_array = np.stack(imgs).transpose((3, 0, 1, 2))
-
-        input_tensor = torch.from_numpy(input_array).unsqueeze(0).to("cuda:0")
+        input_tensor = torch.from_numpy(input_array).unsqueeze(0).to(
+            self.device)
 
         datasample = ActionDataSample()
-        datasample.proposals = InstanceData(bboxes=proposal).to("cuda:0")
+        datasample.proposals = InstanceData(bboxes=proposal).to(self.device)
         datasample.set_metainfo(dict(img_shape=(new_h, new_w)))
+
         with torch.no_grad():
-            result = self.action_recognizer(input_tensor, [datasample], mode="predict")
+            result = self.action_recognizer(
+                input_tensor, [datasample], mode="predict")
             scores = result[0].pred_instances.scores.cpu()
-            if identity_id not in self.score_dict:
-                self.score_dict[identity_id] = [scores]
-            else:
-                self.score_dict[identity_id].append(scores)
 
-            print(identity_id, len(self.score_dict[identity_id]))
+        raw_scores = scores.detach().cpu().numpy().reshape(-1)
+        top_actions = top_k_actions(raw_scores, self.label_map, k=3)
 
-            if len(self.score_dict[identity_id]) >= 5:
-                last_five = self.score_dict[identity_id][-5:]
-                X = np.stack(
-                    [t.detach().cpu().numpy().reshape(-1) for t in last_five], axis=0
-                )
+        if identity_id not in self.score_dict:
+            self.score_dict[identity_id] = []
+        self.score_dict[identity_id].append(scores)
 
-                if identity_id not in self.idx_pca:
-                    self.idx_pca[identity_id] = PCA(n_components=1)
+        pca_scalar = None
+        if len(self.score_dict[identity_id]) >= 5:
+            last_five = self.score_dict[identity_id][-5:]
+            X = np.stack(
+                [t.detach().cpu().numpy().reshape(-1) for t in last_five],
+                axis=0)
 
-                comp = self.idx_pca[identity_id].fit_transform(X)
-                pca_scalar = float(comp.mean())
-                return pca_scalar
+            if identity_id not in self.idx_pca:
+                self.idx_pca[identity_id] = PCA(n_components=1)
 
+            comp = self.idx_pca[identity_id].fit_transform(X)
+            pca_scalar = float(comp.mean())
+
+        return {
+            "raw_scores": raw_scores,
+            "top_actions": top_actions,
+            "pca_scalar": pca_scalar,
+        }

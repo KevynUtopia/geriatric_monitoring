@@ -1,92 +1,195 @@
 ## demo_system_backend
 
-`demo_system_backend` 是对原始 `demo_system` 的**后端精简版**，去除了所有 PyQt 前端 UI，仅保留检测与可视化渲染逻辑，用于对整段离线视频进行推理并导出带可视化结果的 `output.mp4`。
+`demo_system_backend` 是对原始 `demo_system` 的**后端精简版**，去除了所有 PyQt 前端 UI，仅保留检测与可视化逻辑，用于对整段离线视频进行推理并输出带标注的 `output.mp4`。
 
-### 核心功能
+> **建议使用无遮挡、人物清晰可见的视频作为 demo sample。** 遮挡会导致人体关键点置信度下降，tracking ID 频繁切换，影响 action 识别和 anomaly 检测的准确性。
 
-- **输入方式**: 仅支持从本地视频文件（例如 `input.mp4`）读取，不再支持实时摄像头。
-- **检测流水线**:
-  - 直接复用 `demo_system` 中的 `DetectionProcessor` 及其内部模型（如 `PoseDetector`、`ActionRecognizer` 等），保持**中间处理逻辑与原系统一致**。
-  - 每帧进行姿态 / 动作相关检测，并在图像上绘制骨架与边框。
-- **输出方式**:
-  - 将带有骨架和边框可视化结果的视频按帧写入一个新的 MP4 文件（默认 `output.mp4`）。
-  - 为了控制文件大小，输出会限制最大宽度（默认 `640` 像素），使用较低分辨率与常规编码参数。
+---
 
-### 与原始 demo_system 的区别
+### 与 demo_system 的区别
 
-- **前端/UI**:
-  - `demo_system`:
-    - 使用 PyQt5，包含 `main_window.py`、`VideoDisplay`、`ControlPanel` 等完整桌面 UI。
-    - 实时显示摄像头 / 视频流、控制检测模式、显示统计与日志等。
-  - `demo_system_backend`:
-    - 完全移除所有窗口控件、菜单栏、状态栏和交互控件。
-    - 不需要也不会启动任何图形界面，只在终端输出日志。
+| | demo_system | demo_system_backend |
+|---|---|---|
+| **前端** | PyQt5 桌面 GUI | 无 GUI，纯终端 |
+| **输入** | 实时摄像头 / UI 选择视频 | `--input` 指定 mp4 路径 |
+| **输出** | 窗口实时显示 | 写出 `output.mp4` |
+| **调度** | `DetectionProcessor(QObject)` + 线程池 | `pipeline.py` 5 个同步纯函数 |
+| **依赖** | PyQt5, pygame 等 | 不需要 PyQt5, pygame |
+| **MMAction2** | 需要外部安装 mmcv/mmengine/mmaction/mmdet | 已本地化至 `mmlab_local/`，无需额外安装 |
 
-- **输入源**:
-  - `demo_system`:
-    - 支持实时摄像头输入和通过 UI 选择本地视频文件。
-  - `demo_system_backend`:
-    - 输入视频路径通过命令行参数指定，**仅支持本地视频文件**，不再访问摄像头。
+---
 
-- **输出形式**:
-  - `demo_system`:
-    - 在窗口中实时显示检测结果，同时可用于交互式演示。
-  - `demo_system_backend`:
-    - 对整段视频顺序推理，将可视化叠加后的结果写入一个 `mp4` 文件（例如 `output.mp4`），适合离线批处理或生成演示视频。
+### 目录结构
 
-- **代码结构**:
-  - `demo_system`:
-    - 拥有 `app/`, `ui/`, `core/`, `models/` 等完整目录，包含大量前端相关代码。
-  - `demo_system_backend`:
-    - 仅新增少量后端入口与绘制工具：
-      - `main.py`: 后端主入口，负责读取视频、调用 `DetectionProcessor`、写出结果视频。
-      - `draw_utils.py`: 从 `demo_system` 的 `VideoDisplay` 中抽取并改造成**纯 OpenCV** 的绘制函数，用于在帧上画骨架与框，无任何 UI 依赖。
-      - `run_backend.sh`: 便捷的 Bash 启动脚本。
+```
+demo_system_backend/
+├── main.py                  # 入口：参数解析、视频读写、驱动 pipeline loop
+├── pipeline.py              # 5 个 pipeline 阶段函数 + PipelineState
+├── draw_utils.py            # 纯 OpenCV 可视化（骨架、框、标签）
+├── run_backend.sh           # bash 启动脚本（所有参数显式定义）
+├── models/
+│   ├── base_detector.py     # 检测器抽象基类
+│   ├── pose_detector.py     # YOLO Pose + BoT-SORT tracking
+│   └── action_recognizer.py # VideoMAE 动作识别 + PCA + label mapping
+├── mmlab_local/             # 本地化的 OpenMMLab 组件（无需外部 mmcv/mmaction）
+│   ├── backbone_vit.py      # VideoMAE ViT-Large backbone
+│   ├── detector.py          # FastRCNN (inference-only)
+│   ├── roi_head.py          # AVARoIHead
+│   ├── bbox_head.py         # BBoxHeadAVA
+│   ├── roi_extractor.py     # SingleRoIExtractor3D (torchvision RoIAlign)
+│   ├── model_builder.py     # 直接构建模型，绕过 mmengine registry
+│   ├── model_config.py      # 硬编码的模型架构参数
+│   ├── label_utils.py       # AVA label map 加载 + top-k action 解析
+│   ├── ava_label_map.txt    # 80 类 AVA 动作标签（1-indexed）
+│   ├── structures.py        # InstanceData / ActionDataSample
+│   ├── base_module.py       # 轻量 BaseModule (nn.Module wrapper)
+│   ├── cnn_bricks.py        # build_norm_layer, DropPath, FFN, PatchEmbed
+│   └── image_utils.py       # rescale_size, imresize, imnormalize_
+├── temp_requirements.txt    # Python 依赖
+└── README.md
+```
 
-### 依赖关系
+---
 
-- `demo_system_backend` 直接复用 `demo_system` 中的后端逻辑，因此需要：
-  - 已正确安装 `demo_system/requirements.txt` 中列出的依赖；
-  - 已按 `demo_system/README.md` 下载好对应模型权重（如 YOLO、MMAction2 等）；
-  - 保持 `demo_system` 目录结构不变。
+### Pipeline 设计
+
+`main.py` 的 for-loop 对每一帧依次调用 5 个函数，全部定义在 `pipeline.py`，完全同步、线性执行：
+
+```
+for frame_idx in range(total_frames):
+    frame          = preprocess(raw_frame)
+    det_results    = detection(frame, state)
+    action_results = action(frame, det_results, state)
+    bio            = biomarker(action_results, state)
+    annotated      = postprocess(frame, det_results, bio)
+```
+
+#### 各阶段说明
+
+| # | 阶段 | 输入 | 输出 | 说明 |
+|---|------|------|------|------|
+| 1 | **preprocess** | `raw_frame`: BGR uint8 (原始分辨率) | `frame`: BGR uint8 (长边 ≤ max_width) | 等比缩放，限制分辨率 |
+| 2 | **detection** | `frame`: BGR uint8 (H, W, 3) | `det_results`: dict — `keypoints` (N,17,2), `scores` (N,17), `boxes` (list of xyxy), `track_ids` (list of int), `count` (int) | YOLO pose `model.track()` 同时完成检测 + BoT-SORT 跟踪，只保留置信度最高的 `top_identity` 个人 |
+| 3 | **action** | `frame`, `det_results`, `state` (滑动窗口 buffer) | `action_results`: dict or None | 每 5 帧触发一次，从 buffer 中采样 16 帧送入 VideoMAE FastRCNN；按 identity 分别做 81 类 AVA 动作分类 |
+| 4 | **biomarker** | `action_results`, `state` (per-identity 历史) | `bio`: dict or None | 对每个 identity 的 PCA scalar 做滑动窗口方差计算，超过 `anomaly_threshold` 标记为异常 |
+| 5 | **postprocess** | `frame`, `det_results`, `bio` | `annotated`: BGR uint8 | 画骨架、bounding box、`P{id}` 标签、anomaly "!" 标记、全局 ANOMALY 横幅 |
+
+---
+
+### DELIVER
+
+每帧处理完毕后，`main.py` 会打包一个 `DELIVER` 字典，汇总当前帧的所有输出，供未来下游任务使用：
+
+```python
+DELIVER = {
+    "frame_idx":        int,           # 原始视频中的帧序号
+    "det_results":      dict,          # detection 输出（boxes, keypoints, track_ids, ...）
+    "action_results":   dict or None,  # action 输出，每个 identity 包含：
+    #   identity_results[track_id] = {
+    #       "raw_scores":  np.ndarray (81,)    — 81 类 AVA 动作的 sigmoid logits
+    #                                            index 0 = background, 1-80 = 动作类
+    #       "top_actions": [(name, score), ...] — top-3 动作名 + 分数
+    #                                            name 从 ava_label_map.txt 查得
+    #                                            (1-indexed class_id → 动作名)
+    #       "pca_scalar":  float or None        — 81-d score → PCA 降维后的标量
+    #       "scores":      float                — 同 pca_scalar，或 0
+    #       "num_frames":  int                  — 用于推理的帧数
+    #       "boxes":       np.ndarray (K, 4)    — 该 identity 的 bounding boxes
+    #   }
+    "biomarker_summary": dict or None, # biomarker 输出，每个 identity 包含：
+    #   identities[track_id] = {
+    #       "pca_scalar":  float or None
+    #       "scores":      float
+    #       "variance":    float          — 最近 5 次 pca_scalar 的归一化方差
+    #       "anomaly":     bool           — variance > anomaly_threshold
+    #       "top_actions": [(name, score), ...]  — 同上，方便下游直接使用
+    #   }
+    "annotated":        np.ndarray,    # BGR uint8，带标注的可视化帧
+}
+```
+
+---
 
 ### 使用方式
 
-#### 1. 通过 Bash 脚本运行（推荐）
+#### 通过 bash 脚本（推荐）
 
-在仓库根目录下：
-
-```bash
-bash demo_system_backend/run_backend.sh path/to/input.mp4
-```
-
-可选地指定输出路径：
+编辑 `run_backend.sh` 顶部的变量，然后执行：
 
 ```bash
-bash demo_system_backend/run_backend.sh path/to/input.mp4 path/to/output.mp4
+cd demo_system_backend
+bash run_backend.sh
 ```
 
-#### 2. 直接运行 Python 模块
-
-同样在仓库根目录下：
+`run_backend.sh` 中的可配置变量：
 
 ```bash
-python -m demo_system_backend.main --input path/to/input.mp4 --output output.mp4
+INPUT_VIDEO="..."              # 输入视频路径
+OUTPUT_VIDEO="..."             # 输出视频路径
+DEVICE="cuda:0"                # 计算设备
+YOLO_MODEL="..."               # YOLO pose 模型路径 (.pt)
+ACTION_CHECKPOINT="..."        # VideoMAE action 模型路径 (.pth)
+FRAME_STEP=8                   # 抽帧步长（每 N 帧取 1 帧）
+TOP_IDENTITY=1                 # 只追踪置信度最高的 N 个人
+ANOMALY_THRESHOLD=0.145        # 异常检测方差阈值
 ```
 
-可选参数：
+#### 直接执行
 
-- `--device`: 模型推理设备，默认 `"cuda:0"`，若无 GPU 可设为 `"cpu"`。
-- `--mode`: 与原始 `demo_system` 一致的模型模式，`lightweight | balanced | performance`，默认 `balanced`。
-- `--max_width`: 输出视频的最大宽度（像素），默认 `640`，用于控制输出文件大小。
+```bash
+cd demo_system_backend
 
-### 典型工作流
+python main.py \
+    --input       input.mp4 \
+    --output      output.mp4 \
+    --device      cuda:0 \
+    --yolo_model  /path/to/yolo11x-pose.pt \
+    --checkpoint  /path/to/videomae_ava.pth \
+    --frame_step  8 \
+    --top_identity 1 \
+    --anomaly_threshold 0.145
+```
 
-1. 按原始 `demo_system/README.md` 完成依赖安装与权重下载。
-2. 将一段需要分析的老人活动监测视频如 `input.mp4` 放在本地。
-3. 在仓库根目录执行：
-   ```bash
-   bash demo_system_backend/run_backend.sh input.mp4
-   ```
-4. 等待推理结束后，在当前目录或指定路径获得 `output.mp4`，其中包含与原 `demo_system` 类似的骨架和检测可视化叠加效果。
+#### 全部参数
 
+| 参数 | 默认值 | 说明 |
+|------|--------|------|
+| `--input`, `-i` | (必填) | 输入视频路径 |
+| `--output`, `-o` | `output.mp4` | 输出视频路径 |
+| `--device` | `cuda:0` | 计算设备 |
+| `--mode` | `balanced` | 模型模式 (lightweight / balanced / performance) |
+| `--max_width` | `640` | 输出帧最大宽度 |
+| `--yolo_model` | `backend_weights/yolo11n-pose.pt` | YOLO pose 模型路径 |
+| `--checkpoint` | `None` | VideoMAE action 模型 checkpoint 路径 |
+| `--frame_step` | `8` | 抽帧步长（每 N 帧保留 1 帧，输出帧率 = 原帧率 / N） |
+| `--top_identity` | `1` | 每帧只追踪置信度最高的 N 个人 |
+| `--anomaly_threshold` | `0.145` | biomarker 方差异常阈值 |
+
+---
+
+### 环境搭建
+
+#### 1. 创建 conda 环境 + 安装 PyTorch
+
+以下版本与开发服务器完全一致：
+
+| 包 | 版本 |
+|---|---|
+| Python | 3.9.13 |
+| torch | 2.1.0 (CUDA 12.1) |
+| torchvision | 0.16.0 |
+
+```bash
+conda create -n demo_backend python=3.9.13 -y
+conda activate demo_backend
+pip install torch==2.1.0 torchvision==0.16.0 --index-url https://download.pytorch.org/whl/cu121
+```
+
+#### 2. 安装 pip 依赖
+
+```bash
+cd demo_system_backend
+pip install -r requirements.txt
+```
+
+不需要安装 mmcv / mmengine / mmaction2 / mmdet — 相关代码已本地化至 `mmlab_local/`。

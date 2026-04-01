@@ -8,7 +8,7 @@ demo_system_backend.models so that demo_system_backend can run independently.
 import numpy as np
 import cv2
 import os
-from typing import Dict, Tuple, Any, List
+from typing import Dict, Tuple, Any, List, Optional
 
 from .base_detector import BaseDetector
 
@@ -16,9 +16,11 @@ from .base_detector import BaseDetector
 class PoseDetector(BaseDetector):
     """YOLO Pose detection model implementation."""
 
-    def __init__(self, mode: str = "balanced", device: str = "cpu", model_path: str | None = None):
+    def __init__(self, mode: str = "balanced", device: str = "cpu",
+                 model_path: Optional[str] = None, top_k: int = 1):
         super().__init__(mode, device)
         self.model_path = model_path or "backend_weights/yolo11n-pose.pt"
+        self.top_k = top_k
         self.model = None
         self.keypoint_names = [
             "nose",
@@ -82,7 +84,7 @@ class PoseDetector(BaseDetector):
             scores_list: List[np.ndarray] = []
             boxes_list: List[np.ndarray] = []
             box_scores_list: List[float] = []
-            track_ids_list: List[int | None] = []
+            track_ids_list: List[Optional[int]] = []
 
             for result in results:
                 if result.keypoints is not None and len(result.keypoints.data) > 0:
@@ -186,7 +188,7 @@ class PoseDetector(BaseDetector):
                 valid_detections.append(det)
 
         valid_detections.sort(key=lambda x: x["confidence"], reverse=True)
-        top_detections = valid_detections[:1]
+        top_detections = valid_detections[:self.top_k]
 
         if top_detections:
             top_keypoints = [det["keypoints"] for det in top_detections]
@@ -218,7 +220,7 @@ class PoseDetector(BaseDetector):
             }
 
     def draw_skeleton(
-        self, frame: np.ndarray, keypoints: np.ndarray, scores: np.ndarray | None = None
+        self, frame: np.ndarray, keypoints: np.ndarray, scores: Optional[np.ndarray] = None
     ) -> np.ndarray:
         """Draw skeleton on frame (unused in backend, kept for compatibility)."""
         if keypoints is None or len(keypoints) == 0:

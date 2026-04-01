@@ -1,22 +1,31 @@
 #!/usr/bin/env bash
 
-set -e
+# ── Video I/O ──
+INPUT_VIDEO="/mnt/storage/July/recording_2019_06_22_9_20_am/cam_11/cam_11-02760-02880.mov"
+OUTPUT_VIDEO="/home/wzhangbu/Downloads/output.mp4"
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+# ── Device ──
+DEVICE="cuda:0"
 
-INPUT_VIDEO="$1"
+# ── Model Paths ──
+YOLO_MODEL="/home/wzhangbu/Desktop/AoE_Demo/snh_demo/backend_weights/yolo11n-pose.pt"
+ACTION_CHECKPOINT="/home/wzhangbu/demo_system_backend/vit-large-p16_videomae-k400-pre_16x4x1_kinetics-400_20221013-229dbb03.pth"
 
-if [[ -z "${INPUT_VIDEO}" ]]; then
-  echo "Usage: bash demo_system_backend/run_backend.sh <input_video.mp4> [output_video.mp4]"
-  exit 1
-fi
+# ── Frame Subsampling ──
+FRAME_STEP=8
 
-OUTPUT_VIDEO="${2:-output.mp4}"
+# ── Detection ──
+TOP_IDENTITY=1
 
-cd "${PROJECT_ROOT}"
+# ── Anomaly Detection ──
+ANOMALY_THRESHOLD=0.145
 
-python -m demo_system_backend.main \
-  --input "${INPUT_VIDEO}" \
-  --output "${OUTPUT_VIDEO}"
-
+python main.py \
+    --input              "$INPUT_VIDEO" \
+    --output             "$OUTPUT_VIDEO" \
+    --device             "$DEVICE" \
+    --yolo_model         "$YOLO_MODEL" \
+    --checkpoint         "$ACTION_CHECKPOINT" \
+    --frame_step         "$FRAME_STEP" \
+    --top_identity       "$TOP_IDENTITY" \
+    --anomaly_threshold  "$ANOMALY_THRESHOLD"
